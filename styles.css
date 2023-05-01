@@ -1,0 +1,26 @@
+button {
+    font-size: 18pt;
+
+    border: none;
+   
+    animation: flash is infinite;
+}
+button:hover {
+    color:brown;
+    background-color: black;
+
+}
+@keyframes flash {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
