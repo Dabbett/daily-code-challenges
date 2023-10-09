@@ -1,0 +1,47 @@
+.carousel-container {
+    width: 600px;
+    /* Adjust the width as needed */
+    height: 400px;
+    /* Adjust the height as needed */
+    overflow: hidden;
+    
+}
+
+.carousel-container img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+   
+}
+
+.carousel-inner {
+    width: 600px;
+    /* Adjust the width as needed */
+    height: 400px;
+    /* Adjust the height as needed */
+    margin-inline: 5%;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    width: 90%;
+    height: 90%;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    right: 0;
+    transform: translateX(-5%);
+    padding: 0px;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.192);
+}
+
+.carousel-caption h4,
+.carousel-caption p {
+    margin-top: 0;
+}
+
