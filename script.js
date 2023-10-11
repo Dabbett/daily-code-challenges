@@ -1081,3 +1081,26 @@
 //     }
 
 // const testEven = n => n % 2 === 0 ? true : false;
+
+//Implement a function, which takes a non-negative integer, representing the number of eggs to boil. It must return the time in minutes (integer), which it takes to have all the eggs boiled.
+
+//function cookingTime(eggs) {
+// let batch = Math.ceil(eggs / 8)
+// let time = batch * 5
+// return time
+// }
+
+//Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
+
+// Note: input will never be an empty string
+
+//function fakeBin(x){
+// let arr = x.split('')
+// let binaryArr = arr.map(num => {
+//   if(parseInt(num) < 5){
+//     return '0'
+//   } else{
+//     return '1'
+// }})
+//   return binaryArr.join('')
+// }
