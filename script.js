@@ -1104,3 +1104,15 @@
 // }})
 //   return binaryArr.join('')
 // }
+
+// write code for a game such that two players, 'black' and 'white' are playing and if one wins, they start first again, and if they lose then its the other platers turn to start.
+
+// function whoseMove(lastPlayer, win) {
+//   if (win === true) {
+//     return lastPlayer
+//   } else if (win === false && lastPlayer === "white") {
+//     return "black"
+//   } else {
+//     return "white"
+//   }
+// }
