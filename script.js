@@ -1144,3 +1144,13 @@
 // }
 //The cockroach is one of the fastest insects. Write a function which takes its speed in km per hour and returns it in cm per second, rounded down to the integer (= floored).
 //const cockroachSpeed = s => Math.floor(s*(30/1.08))
+
+//In DNA strings, symbols "A" and "T" are complements of each other, as "C" and "G". Your function receives one side of the DNA (string, except for Haskell); you need to return the other complementary side. DNA strand is never empty or there is no DNA at all (again, except for Haskell).
+
+// function DNAStrand(dna){
+//   dna = dna.replaceAll('T', 'a')
+//   dna = dna.replaceAll('A', 't')
+//   dna = dna.replaceAll('G', 'c')
+//   dna = dna.replaceAll('C', 'g')
+//   return dna.toUpperCase()
+// }
