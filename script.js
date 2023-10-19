@@ -1189,3 +1189,9 @@
 //     }
 //     return arr.join('');
 // };
+
+//dna to rna
+
+// function DNAtoRNA(dna){
+//   return dna.replace(/T/g, 'U');
+// }
