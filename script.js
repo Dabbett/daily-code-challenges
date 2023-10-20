@@ -1204,3 +1204,31 @@
 // function past(h, m, s){
 //   return h * 3600000 + m * 60000  + s * 1000;
 // }
+
+//find the smallest value in an array of integers
+
+//class SmallestIntegerFinder {
+//   findSmallestInt(args) {
+//     let sorted = args.sort((a,b) => a - b);
+//     return sorted[0]
+//   }
+// }
+
+//remove the end exclaimation from a string and return string
+
+//function remove (string) {
+//   let stringAsArr = string.split('')
+//   let lastChar = stringAsArr.pop()
+//  return lastChar === '!' ? stringAsArr.join(''): string
+// }
+
+
+//Write a function that takes a list of strings as an argument and returns a filtered list containing the same elements but with the 'geese' removed.
+
+// The geese are any strings in the following array, which is pre-populated in your solution:
+
+// ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]
+// function gooseFilter (birds) {
+//   let geese =  ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]
+//   return birds.filter(bird => !geese.includes(bird))
+// }
