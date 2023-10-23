@@ -1232,3 +1232,12 @@
 //   let geese =  ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]
 //   return birds.filter(bird => !geese.includes(bird))
 // }
+
+//determine if a baby will be a bouy or a girl based on sperm genome
+
+// function chromosomeCheck(sperm) {
+//   if(sperm.includes('Y')){
+//     return "Congratulations! You're going to have a son." } else {
+//     return "Congratulations! You're going to have a daughter."
+//   }
+// }
