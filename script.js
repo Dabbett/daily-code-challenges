@@ -1268,3 +1268,13 @@
 //  })
 //  return score < 0? 0: score
 // }
+
+//write a program that adds all values of an array, converting values that are strings not numbers.
+
+// const addAll = arr => {
+//   let sum = 0;
+//   arr.forEach(num => {
+//     sum += Number(num);
+//   });
+//   return sum;
+// }
