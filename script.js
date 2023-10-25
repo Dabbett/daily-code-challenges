@@ -1326,3 +1326,19 @@
 //   })
 //   return arr2.join('')
 // }
+
+
+//In this simple Kata your task is to create a function that turns a string into a Mexican Wave. You will be passed a string and you must return that string in an array where an uppercase letter is a person standing up. 
+
+
+// function wave(str){
+//   let arr = []
+//   //capture how many letters are in the string. 
+//   let length = str.length
+//   //print str to an array, length times, capitalizing the letter for which correspondes to it's index (-1)
+//   for(let i = 0; i < length; i++){
+//     if(str[i] !==' '){
+//     arr.push(str.substring(0, i) + str[i].toUpperCase() + str.substring(i + 1))
+//   }}
+//   return arr
+// }
