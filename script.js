@@ -1278,3 +1278,51 @@
 //   });
 //   return sum;
 // }
+
+// Finish the solution so that it sorts the passed in array of numbers. If the function passes in an empty array or null/nil value then it should return an empty array.
+
+// function solution(nums){
+//   return nums === null || nums === [] ? [] : nums.sort((a,b)=> a - b)
+// }
+
+//grading tool that averages 3 numbers and returns the average as a letter grade:
+
+// function getGrade (s1, s2, s3) {
+//   let avg = ((s1+s2+s3)/3)
+//   return avg >= 90 ? 'A' : avg >= 80 ? 'B' : avg >= 70 ? 'C' : avg >= 60 ? 'D' : 'F'
+// }
+
+// Americans are odd people: in their buildings, the first floor is actually the ground floor and there is no 13th floor (due to superstition).
+
+// Write a function that given a floor in the american system returns the floor in the european system.
+
+// With the 1st floor being replaced by the ground floor and the 13th floor being removed, the numbers move down to take their place. In case of above 13, they move down by two because there are two omitted numbers below them.
+
+// Basements (negatives) stay the same as the universal level.
+
+
+// function getRealFloor(n) {
+//   if(n < 0) {
+//     return n
+//   } else if(n === 0) {
+//     return 0
+//   } else if(n === 1) {
+//     return 0
+//   } else if(n < 13) {
+//     return n -1
+//   } else if(n > 13) {
+//     return n -2
+//   }  }
+
+// given a String, return the string  but with onbly the letters, no other characters.
+
+// function reverseLetter(str) {
+//  let arr = str.split('').reverse()
+//  let arr2= []
+//   arr.forEach(char => {
+//     if(/^[a-zA-Z]$/.test(char)){
+//       arr2.push(char)
+//     }
+//   })
+//   return arr2.join('')
+// }
