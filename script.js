@@ -422,8 +422,7 @@
 // const userChoice = getUserChoice('rock');
 // const computerChoice = getComputerChoice();
 // determineWinner(userChoice, computerChoice);
-
-
+ 
 // const getUserChoice = userChoice => {
 //     userChoice = userChoice.toLowerCase();
 //     if (userChoice === 'rock' || userChoice === "paper" || userChoice === "scissors") {
@@ -1360,4 +1359,25 @@
 //      }
 //    }
 //   return arr.length
+// }
+
+
+
+//Write a method, that will get an integer array as parameter and will process every number from this array.
+
+// Return a new array with processing every number of the input-array like this:
+
+// If the number has an integer square root, take this, otherwise square the number.
+
+
+//function squareOrSquareRoot(array) {
+//   let result = []
+//   array.forEach(num => {
+//     if(Math.sqrt(num)%1===0 ){
+//       result.push(Math.sqrt(num))
+//     } else {
+//       result.push(num*num)
+//     }
+//   }) 
+//   return result
 // }
