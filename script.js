@@ -1381,3 +1381,50 @@
 //   }) 
 //   return result
 // }
+
+// const pepperoni = {
+//     topping: 'pep',
+//     sauce: 'red',
+//     size: 16,
+//     crust: 'thin',
+//     announce: function() {
+//         console.log('dang!')
+//     },
+//     frisbee: function() {
+//         console.log('throwing...')
+//     }
+
+// }
+
+// function MakePizza(toppings, sauce, size, crust) {
+//     this.toppings = toppings,
+//     this.sauce = sauce,
+//     this.size = size,
+//     this.crust = crust,
+//     this.cheese = true,
+//     this.announce = function() {
+//         console.log('dang!')
+//     },
+//     this.frisbee = function() {
+//         console.log('throwing...')
+//     }
+// }
+
+// let cheesePizza = new MakePizza('none', 'white', 14, 'thick')
+
+
+//               |   |   |   |
+///API!!!!!!!___\/  \/  \/  \/___
+
+//dog-photos:
+fetch("https://dog.ceo/api/breeds/image/random")
+    .then(res => res.json())
+    .then(data => {
+        console.log(data)
+    })
+    // .then(data=> {
+    //     console.log(data)
+    // })
+    .catch(err => {
+        console.log(`error ${err}`)
+    });
