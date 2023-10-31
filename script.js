@@ -1417,14 +1417,24 @@
 ///API!!!!!!!___\/  \/  \/  \/___
 
 //dog-photos:
-fetch("https://dog.ceo/api/breeds/image/random")
-    .then(res => res.json())
-    .then(data => {
-        console.log(data)
-    })
-    // .then(data=> {
-    //     console.log(data)
-    // })
-    .catch(err => {
-        console.log(`error ${err}`)
-    });
+// fetch("https://dog.ceo/api/breeds/image/random")
+//     .then(res => res.json())
+//     .then(data => {
+//         console.log(data.drinks[0])
+//     })
+//     // .then(data=> {
+//     //     console.log(data)
+//     // })
+//     .catch(err => {
+//         console.log(`error ${err}`)
+//     });
+
+// make a mult table 1-10 based on the number given
+// function multiTable(number) {
+//   let table = "";
+//   for(let i = 1; i < 11; i++) {
+//     table += `${i} * ${number} = ${i*number}`;
+//     if (i < 10) table += '\n'
+//   }
+//   return table;
+// }
