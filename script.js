@@ -1442,3 +1442,69 @@
 // Make a function that returns the value multiplied by 50 and increased by 6. If the value entered is a string it should return "Error"
 
 // const problem = x => typeof x === 'string' ? 'Error' : x * 50 + 6;
+
+// Looks like some hoodlum plumber and his brother has been running around and damaging your stages again.
+
+// The pipes connecting your level's stages together need to be fixed before you receive any more complaints.
+
+// The pipes are correct when each pipe after the first is 1 more than the previous one.
+
+// Task
+// Given a list of unique numbers sorted in ascending order, return a new list so that the values increment by 1 for each index from the minimum value up to the maximum value (both included).
+
+
+
+// const pipeFix = numbers => {
+//   let fixed = []
+//   numbers.sort((a,b) => a - b)
+//   let first = numbers[0]
+//   let last = numbers[numbers.length -1]
+//   for(let i = first; i <= last; i++){
+//     fixed.push(i)
+//   }
+//   return fixed
+// }
+
+// Who remembers back to their time in the schoolyard, when girls would take a flower and tear its petals, saying each of the following phrases each time a petal was torn:
+
+// "I love you"
+// "a little"
+// "a lot"
+// "passionately"
+// "madly"
+// "not at all"
+// If there are more than 6 petals, you start over with "I love you" for 7 petals, "a little" for 8 petals and so on.
+
+// When the last petal was torn there were cries of excitement, dreams, surging thoughts and emotions. 
+
+// function howMuchILoveYou(nbPetals) {
+//     const phrases = {
+//       0: "not at all",
+//       1: "I love you",
+//       2: "a little",
+//       3: "a lot",
+//       4: "passionately",
+//       5: "madly"
+//     }
+//   return phrases[nbPetals%6]
+// }
+
+// In this Kata, you will be given a string that may have mixed uppercase and lowercase letters and your task is to convert that string to either lowercase only or uppercase only based on:
+
+// make as few changes as possible.
+// if the string contains equal number of uppercase and lowercase letters, convert the string to lowercase.
+
+// function solve(s){
+//     //identify if there are more uppercase or lowercase.
+//   let lower = 0
+//   let upper = 0
+//     //convert to uppercase if there are more uppercase, otherwise convert to lowercase. 
+//  for (let i = 0; i < s.length; i++){
+//    if(s[i].toUpperCase()=== s[i]) {
+//      upper += 1
+//    } else{
+//      lower += 1
+//    }
+//  }
+//   return lower >= upper ? s.toLowerCase() : s.toUpperCase()
+// }
