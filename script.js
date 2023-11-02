@@ -1509,4 +1509,13 @@
 //   return lower >= upper ? s.toLowerCase() : s.toUpperCase()
 // }
 
-//test
+//test 
+ 
+// function addLength(str) {
+//   let arr = []
+//   str = str.split(' ')
+//   str.forEach(word => {
+//     arr.push(`${word} ${word.length}`)
+//   })
+//   return arr
+// }
