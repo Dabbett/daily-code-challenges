@@ -1533,3 +1533,62 @@
 //   }
 //   return array
 // }
+
+// smallest number possible ignoring repeating numbers from an array of numbers. 
+// function minValue(values){
+//   let unique = []
+//   values.map(num => {
+//     if(!unique.includes(num)){
+//       unique.push(num)
+//     }
+//   })
+//   return Number(unique.sort((a,b)=> a -b).join(''))
+// }
+
+// Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
+
+// It should remove all values from list a, which are present in list b keeping their order.
+
+// const arrayDiff = (a,b) => a.filter(num => !b.includes(num))
+
+// OR:
+
+// function arrayDiff(a, b) {
+//   let arr = []
+//   a.forEach((num) => {
+//     if(!b.includes(num)) {
+//       arr.push(num)
+//     }
+//   })
+//   return arr;
+// }
+
+
+
+// Given a string of words, you need to find the highest scoring word.
+
+// Each letter of a word scores points according to its position in the alphabet: a = 1, b = 2, c = 3 etc.
+
+// For example, the score of abad is 8 (1 + 2 + 1 + 4).
+
+// You need to return the highest scoring word as a string.
+
+// If two words score the same, return the word that appears earliest in the original string.
+
+// All letters will be lowercase and all inputs will be valid.
+
+
+
+// function high(x){
+//   let alphabet = ' abcdefghijklmnopqrstuvwxyz'
+//  let arr = x.split(' ')
+//  let arr2 = []
+//  arr.forEach(word => {
+//    let score = 0
+//    for(let i = 0; i < word.length; i++){
+//      score += alphabet.indexOf(word[i])
+//    } arr2.push(score)
+//  })
+//  let indexOfHighest = arr2.indexOf(Math.max(...arr2))
+//  return arr[indexOfHighest]
+//  }
