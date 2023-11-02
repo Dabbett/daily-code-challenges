@@ -1524,3 +1524,12 @@
 // function shortcut(string){
 //   return string.replace(/[aeiou]/g,'')
 // }
+
+//return an array from a -b
+// function between(a, b) {
+//   let array = []
+//   for(let i = a; i <=b ; i++){
+//     array.push(i)
+//   }
+//   return array
+// }
