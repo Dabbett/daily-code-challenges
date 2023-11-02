@@ -1519,3 +1519,8 @@
 //   })
 //   return arr
 // }
+
+//omit all vowels
+// function shortcut(string){
+//   return string.replace(/[aeiou]/g,'')
+// }
