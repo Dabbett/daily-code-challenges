@@ -1613,3 +1613,15 @@
 //   return total
 //   }
 //};
+
+// function multipleOfIndex(array) {
+//   let multiples = []
+//   array.map((num,index) => {
+//     if(num === 0 & index === 0){
+//       multiples.push(0)
+//     } else if(num % index === 0) {
+//       multiples.push(num)
+//     }
+//   })
+//   return multiples
+// }
