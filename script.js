@@ -1631,35 +1631,40 @@
 // switch(number) {
 //   case 0:
 //     return 'Zero';
-//     break;
 //   case 1: 
 //     return 'One';
-//     break;
 //   case 2:
 //       return 'Two';
-//       break;
 //   case 3:
 //       return 'Three';
-//       break;
 //   case 4:
 //       return 'Four';
-//       break;
 //   case 5:
 //       return 'Five';
-//       break;
 //   case 6:
 //       return 'Six';
-//       break;
 //   case 7:
 //       return 'Seven';
-//       break;
 //   case 8:
 //       return 'Eight';
-//       break;
 //   case 9: 
 //       return 'Nine';
-//       break;
 //   default:
 //       return 'Not a number';
 //     }
+// }
+
+// function checkIfZero(number) {
+//     switch (number) {
+//         case 0:
+//             return 'number is zero'
+//         default: 
+//             return "not zero"
+//     }
+// }
+
+// const solution = (string) => string.split(/(?=[A-Z])/g).join(' ');
+
+// function include(arr, item){
+//   return arr.includes(item);
 // }
