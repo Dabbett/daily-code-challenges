@@ -1685,3 +1685,18 @@
 //     return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`
 //   }
 // }
+
+// function sumDigits(number) {
+//   let sum = 0
+//   number = number.toString()
+//   number = number.split('')
+//   if(number[0]=== "-"){
+//     number = number.slice(1)
+//   }
+//   number.forEach(num=> {
+//     sum += Number(num)
+//   })
+//   return sum
+// }
+
+// const isPalindrome = x => x.toLowerCase() === x.toLowerCase().split('').reverse().join('');
