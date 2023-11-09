@@ -1702,3 +1702,4 @@
 // const isPalindrome = x => x.toLowerCase() === x.toLowerCase().split('').reverse().join('');
 
 // const replace = s => s.replace(/[aeiouAEIOU]/g, '!')
+// const descendingOrder = (n) => Number(n.toString().split('').sort((a, b) => b - a).join(''))
