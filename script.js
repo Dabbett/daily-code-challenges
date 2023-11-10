@@ -1703,3 +1703,26 @@
 
 // const replace = s => s.replace(/[aeiouAEIOU]/g, '!')
 // const descendingOrder = (n) => Number(n.toString().split('').sort((a, b) => b - a).join(''))
+
+// function strCount(str, letter){ 
+//   let total = 0
+//   let array = str.split('')
+//   array.forEach(char=> {
+// if(char === letter) {
+//   total += 1
+// }})
+//   return total
+// }
+
+// function alphabetPosition(text) {
+//  let alphabet = "abcdefghijklmnopqrstuvwxyz"
+//  let alphaValue = []
+//  text = text.toLowerCase()
+//   text = text.split('')
+//   text.map(letter => {
+//    if(alphabet.includes(letter)){
+//    alphaValue.push(alphabet.indexOf(letter)+1)
+//    }
+//  })
+//   return alphaValue.join(" ")
+// }
