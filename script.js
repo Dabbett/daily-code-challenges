@@ -1730,3 +1730,9 @@
 //   numbers = numbers.sort((a,b)=> a - b)
 //   return (numbers[0]+numbers[1])
 // }
+
+//const evenOrOdd = number => number % 2 === 0 ? "Even" : "Odd"  
+
+function peopleWithAgeDrink(old) {
+  return old < 14 ? "drink toddy" : old < 18 ? "drink coke" : old < 21 ? "drink beer" : "drink whisky"
+};
