@@ -1733,6 +1733,12 @@
 
 //const evenOrOdd = number => number % 2 === 0 ? "Even" : "Odd"  
 
-function peopleWithAgeDrink(old) {
-  return old < 14 ? "drink toddy" : old < 18 ? "drink coke" : old < 21 ? "drink beer" : "drink whisky"
-};
+// function peopleWithAgeDrink(old) {
+//   return old < 14 ? "drink toddy" : old < 18 ? "drink coke" : old < 21 ? "drink beer" : "drink whisky"
+// };
+
+// function mergeArrays(arr1, arr2) {
+//   let filteredArr2 = arr2.filter(num => !arr1.includes(num))
+//   let joined = [...arr1,...filteredArr2]
+//   return joined.sort((a,b)=> a-b)
+// }
