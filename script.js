@@ -1747,3 +1747,10 @@
 //   numbers = numbers.split(' ').sort((a,b)=> a - b)
 //   return `${numbers[numbers.length -1]} ${numbers[0]}`
 // }
+
+// function getSize(w, h, d){
+//   let arr = []
+//   arr.push((w*h*2)+ (h*d*2)+ (d*w*2))
+//   arr.push(w*h*d)
+//   return arr
+// }
