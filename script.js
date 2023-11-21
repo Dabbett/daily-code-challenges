@@ -1762,3 +1762,44 @@
 //       return "Your plant has had more than enough water for today!";
 //     }
 // }
+
+// function rowWeights(array){
+//   let arr1 = 0
+//   let arr2 = 0
+//   array.map((num, i) => {
+//     if(i % 2 === 0){
+//       arr1 += num
+//     } else {
+//       arr2 += num
+//     }
+//   })
+//   return [arr1,arr2]
+// }
+
+// const getEvenNumbers = numbersArray => numbersArray.filter(num => num % 2 === 0)
+
+// function isValidWalk(walk) {
+//   let x = 0
+//   let y = 0
+//   let location = [x,y]
+//   walk.forEach(dir => {
+//     switch (dir) {
+//       case 'n': 
+//         y+=1;
+//         break;
+//       case 's': 
+//         y-=1;
+//         break;
+//       case 'e': 
+//         x+=1;
+//         break;
+//       case 'w': 
+//         x-=1;
+//         break;
+//     }
+//   })
+//   return walk.length == 10 && x == 0 && y == 0
+
+// function check(a,b){
+//   return a.includes(b);
+// };
