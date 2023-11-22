@@ -1803,3 +1803,29 @@
 // function check(a,b){
 //   return a.includes(b);
 // };
+
+// function findMultiples(integer, limit) {
+//   let multiples = []
+//   for(let i = integer; i <= limit; i += integer){
+//       multiples.push(i)
+//   }
+//   return multiples
+// }
+
+// function twoSum(numbers, target) {
+//   let result = null
+//     numbers.forEach((num1, index1) => {
+//       numbers.forEach((num2, index2) => {
+//         if(num1 + num2 === target && index1 !== index2 && result === null){
+//           result = [index1, index2]
+//         }
+//       })
+//     })
+//   return result
+// }
+
+function largestPairSum(numbers)
+{
+  let sorted = numbers.sort((a, b) => b - a);
+  return sorted[0] + sorted[1];
+}
