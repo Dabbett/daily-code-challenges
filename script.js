@@ -1824,8 +1824,17 @@
 //   return result
 // }
 
-function largestPairSum(numbers)
-{
-  let sorted = numbers.sort((a, b) => b - a);
-  return sorted[0] + sorted[1];
-}
+// function largestPairSum(numbers)
+// {
+//   let sorted = numbers.sort((a, b) => b - a);
+//   return sorted[0] + sorted[1];
+// }
+// function sumMul(n,m){
+//   let sum = []
+//   if(n < m){
+//     for(let i = n; i < m; i+=n){
+//       sum.push(i)
+//     }
+//     return sum.reduce((a,c)=> a+c)
+//   } else {return 'INVALID'}
+// }
