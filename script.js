@@ -1845,3 +1845,11 @@
 //     return arr[0] - arr[arr.length-1]
 //     } else {return 0}
 // }
+
+// function persistence(num) {
+//   let i = 0
+//    for(i = 0; num > 9; i++){
+//      num = num.toString().split('').reduce((a,b) => a*b)
+//   }
+//   return i
+// }
