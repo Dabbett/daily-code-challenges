@@ -1839,3 +1839,9 @@
 //   } else {return 'INVALID'}
 // }
 
+// function sumOfDifferences(arr) {
+//   arr.sort((a,b) => b - a)
+//   if(arr.length > 1) {
+//     return arr[0] - arr[arr.length-1]
+//     } else {return 0}
+// }
