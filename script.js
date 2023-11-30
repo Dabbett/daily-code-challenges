@@ -1857,3 +1857,19 @@
 //birthday 
 
 //const remove = s => s.replace(/!+$/, '');
+
+// const dog = {
+//     breed: "lab",
+//     humanAge: 7,
+//     dogAge() {
+//         return humanAge * 7
+//     }
+// }
+
+// function MakeDog(breed, age, size) {
+//     this.breed = breed
+//     this.age = age
+//     this.size = size
+// }
+
+// let dan = new MakeDog("doberman", 15, "medium")
