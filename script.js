@@ -1918,3 +1918,14 @@
 //   }
 //   return days;
 // }
+
+//function bump(x){
+//   x = x.split('')
+//   let incrementer = 0
+//   x.forEach((char) => {
+//     if(char === 'n') {
+//       incrementer += 1
+//     }
+//   })
+//   return incrementer <= 15 ? "Woohoo!" : "Car Dead"
+// }
