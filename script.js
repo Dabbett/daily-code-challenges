@@ -1919,7 +1919,7 @@
 //   return days;
 // }
 
-//function bump(x){
+//  function bump(x){
 //   x = x.split('')
 //   let incrementer = 0
 //   x.forEach((char) => {
@@ -1928,4 +1928,7 @@
 //     }
 //   })
 //   return incrementer <= 15 ? "Woohoo!" : "Car Dead"
-// }
+//    }
+
+// const squareArea = (A) => (A * 4 / (2 * Math.PI)) ** 2;
+
