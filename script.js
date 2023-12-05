@@ -1932,3 +1932,6 @@
 
 // const squareArea = (A) => (A * 4 / (2 * Math.PI)) ** 2;
 
+// function dutyFree(normPrice, discount, hol){
+//   return Math.floor(hol / normPrice / discount * 100)
+// }
