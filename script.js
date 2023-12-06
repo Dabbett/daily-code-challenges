@@ -1935,3 +1935,13 @@
 // function dutyFree(normPrice, discount, hol){
 //   return Math.floor(hol / normPrice / discount * 100)
 // }
+
+function remainder(n, m){
+  if((n>0 && m===0)||(m>0 && n===0)||(n===0 && m===0)){
+    return NaN
+  } else if (n<m) {
+    return m%n
+  } else {
+    return n%m
+  }
+}
