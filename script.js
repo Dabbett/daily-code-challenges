@@ -1936,12 +1936,23 @@
 //   return Math.floor(hol / normPrice / discount * 100)
 // }
 
-function remainder(n, m){
-  if((n>0 && m===0)||(m>0 && n===0)||(n===0 && m===0)){
-    return NaN
-  } else if (n<m) {
-    return m%n
-  } else {
-    return n%m
-  }
+// function remainder(n, m){
+//   if((n>0 && m===0)||(m>0 && n===0)||(n===0 && m===0)){
+//     return NaN
+//   } else if (n<m) {
+//     return m%n
+//   } else {
+//     return n%m
+//   }
+// }
+
+// // same thing simplified:
+
+// function remainder(a, b) {
+//   return a > b ? a % b : b % a;
+// }
+
+function mango(q, p){
+  return p * (q - (Math.floor(q/3)))
 }
+
