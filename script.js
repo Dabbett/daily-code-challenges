@@ -1952,7 +1952,7 @@
 //   return a > b ? a % b : b % a;
 // }
 
-function mango(q, p){
-  return p * (q - (Math.floor(q/3)))
-}
+// function mango(q, p){
+//   return p * (q - (Math.floor(q/3)))
+// }
 
