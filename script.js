@@ -1956,3 +1956,7 @@
 //   return p * (q - (Math.floor(q/3)))
 // }
 
+// read the prompt thoroughly. 
+// function validateUsr(username) {
+//   return /^[0-9a-z_]{4,16}$/.test(username)
+// }
