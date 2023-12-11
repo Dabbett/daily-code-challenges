@@ -1960,3 +1960,9 @@
 // function validateUsr(username) {
 //   return /^[0-9a-z_]{4,16}$/.test(username)
 // }
+
+// interior angles of triangle calculator: 
+
+// function otherAngle(a, b) {
+//   return 180-a-b
+// }
