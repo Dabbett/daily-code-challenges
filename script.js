@@ -1966,3 +1966,7 @@
 // function otherAngle(a, b) {
 //   return 180-a-b
 // }
+
+// function sortByLength (array) {
+//   return array.sort((a,b) => a.length - b.length);
+// };
