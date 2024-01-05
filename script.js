@@ -1979,3 +1979,11 @@
 // const multiply = (a, b) => a * b;
 // const mod = (a, b) => a % b;
 // const exponent = (a, b) => a ** b;
+
+// function xor(a, b) {
+//   return a === true && b === true
+//     ? false
+//     : a === true || b === true
+//     ? true
+//     : false;
+// }
