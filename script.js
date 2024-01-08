@@ -1987,3 +1987,9 @@
 //     ? true
 //     : false;
 // }
+
+// function isLockNessMonster(s) {
+//   let possiblePhrases = ["tree fiddy", "3.50", "three fifty"]
+  
+//   return possiblePhrases.some(phrase => s.toLowerCase().includes(phrase));
+// }
