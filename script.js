@@ -1993,3 +1993,5 @@
   
 //   return possiblePhrases.some(phrase => s.toLowerCase().includes(phrase));
 // }
+
+// const move = (position, roll) => roll * 2 + position;
