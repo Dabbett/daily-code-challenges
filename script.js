@@ -1995,3 +1995,33 @@
 // }
 
 // const move = (position, roll) => roll * 2 + position;
+
+// const getSum = (a, b) => {
+//   let sum = 0;
+//   if (a === b) {
+//     return a;
+//   } else if (a < b) {
+//     for (let i = a; i <= b; i++) {
+//       sum += i;
+//     }
+//     return sum;
+//   } else if (b < a) {
+//     for (let i = b; i <= a; i++) {
+//       sum += i;
+//     }
+//     return sum;
+//   }
+// };
+
+// function trueOrFalse(val){
+//   let arr= [0,false,-0,null,undefined, NaN,""]
+//   if (arr.includes(val)) {
+//   return "false"}           
+//   else{return "true"};
+// }
+
+// function trueOrFalse(val){
+//   if (!(val)) {
+//   return "false"}           
+//   else{return "true"};
+// }
