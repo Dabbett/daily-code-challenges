@@ -2042,3 +2042,14 @@
 //        }
 //   } return sum
 // }
+
+// function remove(string) {
+//   const newArr = string.split("").filter((i) => i !== "!");
+//   newArr.push("!");
+//   return newArr.join("");
+// }
+// BETTER:
+
+// function remove(string) {
+//   return string.replace(/!/g, "") + "!";
+// }
