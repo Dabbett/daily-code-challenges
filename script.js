@@ -2065,4 +2065,15 @@
 //const digits = n => n.toString().split("").length
 //
 
-//
+//hotdog calc: 
+
+// const saleHotdogs = (n) => (n < 5 ? n * 100 : n < 10 ? n * 95 : n * 90);
+
+//but use this one if you want the first ones to cost x amoutn and then the more you buy, those ones decrease in price: 
+//const saleHotdogs = (n) => {
+//   let sum = 0; // Initialize the total sum to 0
+//   for(let i = 1; i <= n; i++) { // Loop through each hotdog sold
+//     (i < 5) ? sum += 100 : (i < 10)? sum += 95 : sum += 90 // Determine the price based on quantity sold and accumulate the sum
+//   }
+//   return sum; // Return the total sum
+// }
