@@ -2077,3 +2077,20 @@
 //   }
 //   return sum; // Return the total sum
 // }
+
+//const whoIsPaying = (name) =>  name.length<=2? [name]: [name, name.slice(0,2)]
+
+//const capitalize = (s) => {
+//   let string = s.split('')
+//   let oddString = s.split('')
+//   string.forEach((char, i) => {
+//     if(i % 2 === 0 || i === 0) { 
+//       string[i] = char.toUpperCase()
+//   }})
+//   oddString.forEach((char, i) => {
+//     if(i % 2 === 1) { 
+//       oddString[i] = char.toUpperCase()
+//   }})
+//   return [ string.join(''), oddString.join('')]
+// };
+                 
