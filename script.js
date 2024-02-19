@@ -2151,4 +2151,10 @@
 //simple average: 
 //const findAverage = nums => (nums.reduce((a,b) => a+b)/nums.length)
 
-//
+//const number = busStops => {
+//   let total = 0
+//   busStops.forEach(set => {
+//     total += set[0] - set[1]
+//   })
+//   return total
+// }
