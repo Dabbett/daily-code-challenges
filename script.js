@@ -2095,5 +2095,55 @@
 // };
 
 
-//
+// //decode and encode : 
+//function encode(string) {
+//  let arr = string.split('').map(char => {
+//    switch (char) {
+//      case 'a':
+//        return '1';
+//        break;
+//     case 'e':
+//        return '2';
+//        break;
+//     case 'i':
+//        return '3';
+//        break;
+//     case 'o':
+//        return '4';
+//        break;
+//     case 'u':
+//        return '5';
+//        break;
+//     default:
+//        return char;
+//        break;
+//  }
+//    })
+// return arr.join("")
+// }
+
+// function decode(string) {
+//   let arr2 = string.split('').map(char => {
+//    switch (char) {
+//      case '1':
+//        return 'a';
+//        break;
+//     case '2':
+//        return 'e';
+//        break;
+//     case '3':
+//        return 'i';
+//        break;
+//     case '4':
+//        return 'o';
+//        break;
+//     case '5':
+//        return 'u';
+//        break;
+//     default:
+//        return char;
+//        break;
+//  }
+//    })
+// return arr2.join("")
                  
