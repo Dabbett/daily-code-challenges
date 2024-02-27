@@ -2160,3 +2160,16 @@
 // }
 
 //const noOdds = values => values.filter(num => num % 2 === 0)
+
+//class Ship {
+//   constructor(draft, crew) {
+//     this.draft = draft
+//     this.crew = crew
+//   }
+  
+//   isWorthIt() {
+
+//   let worth = this.draft - (this.crew*1.5)
+//   return worth > 20 ? true: false  
+//     }
+// }
