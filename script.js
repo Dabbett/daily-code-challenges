@@ -2173,3 +2173,36 @@
 //   return worth > 20 ? true: false  
 //     }
 // }
+
+
+// class makeEspressoMachine {
+//     constructor(brand, beanCapacity, cupQuantity, highestTemp, pressure){
+//         this.brand = brand
+//         this.capacity = beanCapacity
+//         this.cup = cupQuantity
+//         this.temp = highestTemp
+//         this.pressure = pressure
+//     }
+//     brew() {
+//     console.log(`brewing ${this.cup} cups at ${this.temp}degrees F and ${this.pressure} kPa`)
+// }
+// }
+
+// let breville = new makeEspressoMachine("breville", 2, 250, 15)
+
+// const cookie = (x) => {
+//   let name = "";
+//   switch (typeof x) {
+//     case "string":
+//       name = "Zach";
+//       break;
+//     case "number":
+//       name = "Monica";
+//       break;
+//     default:
+//       name = "the dog";
+//       break;
+//   }
+//   return `Who ate the last cookie? It was ${name}!`;
+// };
+
