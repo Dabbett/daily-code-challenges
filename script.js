@@ -2222,12 +2222,18 @@
 // }
 
 
-function sumTriangularNumbers(n) {
-  let total = 0;
-  for (let i = 1; i <= n; i++) {
-    for (let j = 1; j <= i; j++) {
-      total += j;
-    }
-  }
-  return total;
-}
+// function sumTriangularNumbers(n) {
+//   let total = 0;
+//   for (let i = 1; i <= n; i++) {
+//     for (let j = 1; j <= i; j++) {
+//       total += j;
+//     }
+//   }
+//   return total;
+// }
+
+// function Sleigh() {}
+
+// Sleigh.prototype.authenticate = function (name, password) {
+//   return name === "Santa Claus" && password === "Ho Ho Ho!" ? true : false;
+// };
