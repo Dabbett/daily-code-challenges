@@ -2217,6 +2217,17 @@
 // }
 
 
-function toNumberArray(stringarray) {
-  return stringarray.map((string) => Number(string));
+// function toNumberArray(stringarray) {
+//   return stringarray.map((string) => Number(string));
+// }
+
+
+function sumTriangularNumbers(n) {
+  let total = 0;
+  for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= i; j++) {
+      total += j;
+    }
+  }
+  return total;
 }
