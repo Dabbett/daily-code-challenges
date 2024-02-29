@@ -2237,3 +2237,8 @@
 // Sleigh.prototype.authenticate = function (name, password) {
 //   return name === "Santa Claus" && password === "Ho Ho Ho!" ? true : false;
 // };
+
+function validateCode(code) {
+  return /^[1-3]/.test(code);
+}
+
