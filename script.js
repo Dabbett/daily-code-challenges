@@ -2247,3 +2247,13 @@
 //   longDate.pop();
 //   return longDate[0];
 // }
+
+
+var greet = function (name) {
+  let arr = name.split("");
+  arr[0] = arr[0].toUpperCase();
+  for (let i = 1; i < arr.length; i++) {
+    arr[i] = arr[i].toLowerCase();
+  }
+  return `Hello ${arr.join("")}!`;
+};
