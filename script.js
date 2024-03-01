@@ -2235,10 +2235,15 @@
 // function Sleigh() {}
 
 // Sleigh.prototype.authenticate = function (name, password) {
-//   return name === "Santa Claus" && password === "Ho Ho Ho!" ? true : false;
-// };
+// //   return name === "Santa Claus" && password === "Ho Ho Ho!" ? true : false;
+// // };
 
-function validateCode(code) {
-  return /^[1-3]/.test(code);
-}
+// function validateCode(code) {
+//   return /^[1-3]/.test(code);
+// }
 
+// function shortenToDate(longDate) {
+//   longDate = longDate.split(",");
+//   longDate.pop();
+//   return longDate[0];
+// }
