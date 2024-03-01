@@ -2249,11 +2249,18 @@
 // }
 
 
+// var greet = function (name) {
+//   let arr = name.split("");
+//   arr[0] = arr[0].toUpperCase();
+//   for (let i = 1; i < arr.length; i++) {
+//     arr[i] = arr[i].toLowerCase();
+//   }
+//   return `Hello ${arr.join("")}!`;
+// };
+
+//BETTER:
+
 var greet = function (name) {
-  let arr = name.split("");
-  arr[0] = arr[0].toUpperCase();
-  for (let i = 1; i < arr.length; i++) {
-    arr[i] = arr[i].toLowerCase();
-  }
-  return `Hello ${arr.join("")}!`;
+  name = name.toLowerCase();
+  return `Hello ${name.charAt(0).toUpperCase() + name.slice(1)}!`;
 };
