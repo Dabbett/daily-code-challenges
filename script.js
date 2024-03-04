@@ -2287,12 +2287,25 @@
 
 // const whitePizza = new MakePizza(16, 'circle', 'white', 'stuffed')
 
-function noBoringZeros(n) {
-  let str = n.toString();
-  let arr = str.split("").reverse();
-  while (arr[0] === "0") {
-    arr.shift();
-  }
+// function noBoringZeros(n) {
+//   let str = n.toString();
+//   let arr = str.split("").reverse();
+//   while (arr[0] === "0") {
+//     arr.shift();
+//   }
 
-  return Number(arr.reverse().join(""));
-}
+//   return Number(arr.reverse().join(""));
+// }
+
+// function array(string) {
+//   let arr = string.split(",");
+//   arr.shift();
+//   arr.pop();
+//   if (arr.length === 0) {
+//     return null;
+//   } else if (arr.length === 1) {
+//     return arr.toString();
+//   } else {
+//     return arr.join(" ");
+//   }
+// }
