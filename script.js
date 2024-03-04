@@ -2309,3 +2309,27 @@
 //     return arr.join(" ");
 //   }
 // }
+//BETTER:
+
+//function array(arr){
+//   return arr.split(",").slice(1,-1).join(" ") || null;
+// }
+
+// mine: 
+//const array = string => {
+//   return string.split(',').slice(1,-1).join(' ')|| null
+//   }
+
+
+// function whatday(num) {
+//   const day = {
+//     1: "Sunday",
+//     2: "Monday",
+//     3: "Tuesday",
+//     4: "Wednesday",
+//     5: "Thursday",
+//     6: "Friday",
+//     7: "Saturday",
+//   };
+//   return day[num] || "Wrong, please enter a number between 1 and 7";
+// }
