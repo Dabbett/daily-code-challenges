@@ -2260,7 +2260,39 @@
 
 //BETTER:
 
-var greet = function (name) {
-  name = name.toLowerCase();
-  return `Hello ${name.charAt(0).toUpperCase() + name.slice(1)}!`;
-};
+// var greet = function (name) {
+//   name = name.toLowerCase();
+//   return `Hello ${name.charAt(0).toUpperCase() + name.slice(1)}!`;
+// };
+
+// const wordsToMarks = (string) =>
+//   string
+//     .split("")
+//     .map((char) => Number(char.charCodeAt(0)) - 96)
+// //     .reduce((a, b) => a + b);
+
+// const pizza = {
+//     size: '16',
+//     shape: 'square',
+//     sauce: 'red',
+//     crust: 'stuffed'
+// }
+
+// function MakePizza(size, shape, sauce, crust) {
+//     this.size = size
+//     this.sauce = sauce
+//     this.shape = shape
+//     this.crust = crust
+// }
+
+// const whitePizza = new MakePizza(16, 'circle', 'white', 'stuffed')
+
+function noBoringZeros(n) {
+  let str = n.toString();
+  let arr = str.split("").reverse();
+  while (arr[0] === "0") {
+    arr.shift();
+  }
+
+  return Number(arr.reverse().join(""));
+}
