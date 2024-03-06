@@ -2334,4 +2334,4 @@
 //   return day[num] || "Wrong, please enter a number between 1 and 7";
 // }
 
-/
+//const finalGrade = (exam, projects) => exam > 90 || projects > 10? 100: exam > 75 && projects > 4? 90: exam > 50 && projects > 1? 75: 0
