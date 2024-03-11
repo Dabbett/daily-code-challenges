@@ -2335,3 +2335,23 @@
 // }
 
 //const finalGrade = (exam, projects) => exam > 90 || projects > 10? 100: exam > 75 && projects > 4? 90: exam > 50 && projects > 1? 75: 0
+
+
+// class MakeShow {
+//     constructor(showName, genre, length, rating) {
+//         this.name = showName,
+//             this.length = length,
+//             this.rating = rating,
+//         this.genre = genre
+// }
+// }
+
+// const breakingBad = new MakeShow('breaking bad', 'mystery', '3 seasons', 99)
+
+// breakingBad.cancelled = false
+// return breakingBad\
+
+
+// var templateStrings = function (noun, adjective) {
+//   return `${noun} are ${adjective}`;
+// };
