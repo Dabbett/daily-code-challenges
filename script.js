@@ -2355,3 +2355,17 @@
 // var templateStrings = function (noun, adjective) {
 //   return `${noun} are ${adjective}`;
 // };
+
+
+// class makeAppliance {
+//     constructor(type, brand, cost, isProfessional) {
+//         this.type = type
+//         this.brand = brand
+//         this.cost = cost
+//         this.professional = isProfessional
+//     }
+// }
+
+// const kitchenaidOven = new makeAppliance('oven', 'kitchenaid', 2000, true)
+
+// return kitchenaidOven
