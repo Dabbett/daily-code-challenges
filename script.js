@@ -2357,7 +2357,7 @@
 // };
 
 
-// class makeAppliance {
+// class MakeAppliance {
 //     constructor(type, brand, cost, isProfessional) {
 //         this.type = type
 //         this.brand = brand
@@ -2369,3 +2369,18 @@
 // const kitchenaidOven = new makeAppliance('oven', 'kitchenaid', 2000, true)
 
 // return kitchenaidOven
+
+class MakePie {
+    constructor(crust, filling, baked) {
+        this.crust = crust;
+        this.filling = filling;
+        this.isbaked = baked;
+    }
+        cook() {
+            console.log('cooking pie')
+        }
+}
+
+const keyLime = new MakePie('flakey', 'lime', true)
+
+console.log(keyLime)
