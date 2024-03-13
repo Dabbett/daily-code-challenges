@@ -2387,7 +2387,7 @@
 // // 
 
 
-function getNumberFromString(s) {
-  let digits = s.match(/\d/g);
-  return Number(digits.join(""));
-}
+// function getNumberFromString(s) {
+//   let digits = s.match(/\d/g);
+//   return Number(digits.join(""));
+// }
