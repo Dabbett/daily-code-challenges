@@ -1,8 +1,8 @@
 .carousel-container {
     width: 600px;
-    /* Adjust the width as needed */
+    
     height: 400px;
-    /* Adjust the height as needed */
+    
     overflow: hidden;
     
 }
@@ -16,9 +16,9 @@
 
 .carousel-inner {
     width: 600px;
-    /* Adjust the width as needed */
+ 
     height: 400px;
-    /* Adjust the height as needed */
+   
     margin-inline: 5%;
 }
 
