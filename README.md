@@ -16,7 +16,7 @@ I welcome collaboration and feedback from fellow developers. If you come across 
 
 ## Contact
 
-If you're an employer interested in my commitment to improving my JavaScript skills or would like to discuss potential opportunities, please don't hesitate to reach out to me via [email](mailto:your.email@example.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/yourusername/).
+If you're an employer interested in my commitment to improving my JavaScript skills or would like to discuss potential opportunities, please don't hesitate to reach out to me via [email](mailto:dylanmabbett@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/dylanabbett/).
 
 Thank you for visiting my repository. Let's embark on this journey of continuous improvement together!
 
