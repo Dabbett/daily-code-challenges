@@ -2370,17 +2370,24 @@
 
 // return kitchenaidOven
 
-class MakePie {
-    constructor(crust, filling, baked) {
-        this.crust = crust;
-        this.filling = filling;
-        this.isbaked = baked;
-    }
-        cook() {
-            console.log('cooking pie')
-        }
+// class MakePie {
+//     constructor(crust, filling, baked) {
+//         this.crust = crust;
+//         this.filling = filling;
+//         this.isbaked = baked;
+//     }
+//         cook() {
+//             console.log('cooking pie')
+//         }
+// }
+
+// const keyLime = new MakePie('flakey', 'lime', true)
+
+// console.log(keyLime)
+// // 
+
+
+function getNumberFromString(s) {
+  let digits = s.match(/\d/g);
+  return Number(digits.join(""));
 }
-
-const keyLime = new MakePie('flakey', 'lime', true)
-
-console.log(keyLime)
