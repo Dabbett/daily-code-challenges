@@ -2432,12 +2432,22 @@
 
 // remove duplicates from a list
 
-function distinct(a) {
-  let newArr = [];
-  a.forEach((num) => {
-    if (!newArr.includes(num)) {
-      newArr.push(num);
-    }
-  });
-  return newArr;
+// function distinct(a) {
+//   let newArr = [];
+//   a.forEach((num) => {
+//     if (!newArr.includes(num)) {
+//       newArr.push(num);
+//     }
+//   });
+//   return newArr;
+// }
+
+// custom welcome message: 
+
+function sayHello(name, city, state) {
+  name = name.join(" ");
+  return `Hello, ${name}! Welcome to ${city}, ${state}!`;
 }
+
+//can be used with a .forEach in other circumstances/scenarios, but this is the easiest and more complicated loops are not necessary
+
