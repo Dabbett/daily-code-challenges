@@ -2418,14 +2418,26 @@
 
 // // can use 'd' in place of '[0-9]' to be more concise. 
 
-//one year worth of steps, to assume the amount of steps in 20 years. 
-function stairsIn20(s) {
-  let sum = 0;
+// //one year worth of steps, to assume the amount of steps in 20 years. 
+// function stairsIn20(s) {
+//   let sum = 0;
 
-  s.forEach((day) => {
-    sum += day.reduce((a, b) => a + b);
+//   s.forEach((day) => {
+//     sum += day.reduce((a, b) => a + b);
+//   });
+//   return sum * 20;
+// }
+
+// //can also do this with two nested .reduce arrow functions. 
+
+// remove duplicates from a list
+
+function distinct(a) {
+  let newArr = [];
+  a.forEach((num) => {
+    if (!newArr.includes(num)) {
+      newArr.push(num);
+    }
   });
-  return sum * 20;
+  return newArr;
 }
-
-//can also do this with two nested .reduce arrow functions. 
