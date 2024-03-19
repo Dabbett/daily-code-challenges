@@ -2403,3 +2403,17 @@
 
 
 // websites[0] = "codewars";
+
+//test for a digit
+
+String.prototype.digit = function () {
+  return /[0-9]/g.test(this);
+};
+
+ // this below shoudl test for ONLY a digit since the above just checks IF there is one. 
+
+String.prototype.digit = function () {
+  return /^[0-9]$/g.test(this);
+};
+
+// can use 'd' in place of '[0-9]' to be more concise. 
