@@ -2406,14 +2406,26 @@
 
 //test for a digit
 
-String.prototype.digit = function () {
-  return /[0-9]/g.test(this);
-};
+// String.prototype.digit = function () {
+//   return /[0-9]/g.test(this);
+// };
 
- // this below shoudl test for ONLY a digit since the above just checks IF there is one. 
+//  // this below shoudl test for ONLY a digit since the above just checks IF there is one. 
 
-String.prototype.digit = function () {
-  return /^[0-9]$/g.test(this);
-};
+// String.prototype.digit = function () {
+//   return /^[0-9]$/g.test(this);
+// };
 
-// can use 'd' in place of '[0-9]' to be more concise. 
+// // can use 'd' in place of '[0-9]' to be more concise. 
+
+//one year worth of steps, to assume the amount of steps in 20 years. 
+function stairsIn20(s) {
+  let sum = 0;
+
+  s.forEach((day) => {
+    sum += day.reduce((a, b) => a + b);
+  });
+  return sum * 20;
+}
+
+//can also do this with two nested .reduce arrow functions. 
