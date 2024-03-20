@@ -2518,5 +2518,5 @@
 //write a function that can take an array of string and numbers and return the sum of all the values. 
 
 function sumAllDespiteType(arr) {
-    return arr.reduce((acc,c)=> acc += Number(c), 0)
+    return arr.reduce((acc,c)=> acc + Number(c), 0)
 }
