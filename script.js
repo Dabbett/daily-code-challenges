@@ -2461,31 +2461,39 @@
 
 // keep the other team on their toes:
 
-const baseballPlayers = [
-  "Mike Trout",
-  "Mookie Betts",
-  "Christian Yelich",
-  "Cody Bellinger",
-  "Jacob deGrom",
-  "Ronald Acuña Jr.",
-  "Gerrit Cole",
-  "Juan Soto",
-  "Fernando Tatis Jr.",
-  "Shohei Ohtani",
-];
+// const baseballPlayers = [
+//   "Mike Trout",
+//   "Mookie Betts",
+//   "Christian Yelich",
+//   "Cody Bellinger",
+//   "Jacob deGrom",
+//   "Ronald Acuña Jr.",
+//   "Gerrit Cole",
+//   "Juan Soto",
+//   "Fernando Tatis Jr.",
+//   "Shohei Ohtani",
+// ];
 
-const reverseOrder = (arr) => arr.reverse()
+// const reverseOrder = (arr) => arr.reverse()
 
-const randomOrder = (arr) => {
-    let randomizedArray = []
-    while (arr.length > 0) {
-        const randomIndex = Math.floor(Math.random() * arr.length);
-        const removedItem = arr.splice(randomIndex, 1)[0]
-        randomizedArray.push(removedItem);
-    }
-    return randomizedArray
+// const randomOrder = (arr) => {
+//     let randomizedArray = []
+//     while (arr.length > 0) {
+//         const randomIndex = Math.floor(Math.random() * arr.length);
+//         const removedItem = arr.splice(randomIndex, 1)[0]
+//         randomizedArray.push(removedItem);
+//     }
+//     return randomizedArray
+// }
+
+// reverseOrder(baseballPlayers)
+
+// randomOrder(baseballPlayers)
+
+
+//given two small integer arrays, create a program that returns true if the sum of the squares of each element in array a is strictly greater than the sum of the cubes of each element in array b. 
+
+function compareSquareAndCube(a, b) {
+    return a.reduce((acc,c)=> acc + c**2,0) > b.reduce((acc, c) => acc + c**3,0)
 }
 
-reverseOrder(baseballPlayers)
-
-randomOrder(baseballPlayers)
