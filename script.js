@@ -2442,12 +2442,19 @@
 //   return newArr;
 // }
 
-// custom welcome message: 
+// custom welcome message where the name is an array: 
 
-function sayHello(name, city, state) {
-  name = name.join(" ");
-  return `Hello, ${name}! Welcome to ${city}, ${state}!`;
+// function sayHello(name, city, state) {
+//   name = name.join(" ");
+//   return `Hello, ${name}! Welcome to ${city}, ${state}!`;
+// }
+
+// //can be used with a .forEach in other circumstances/scenarios, but this is the easiest and more complicated loops are not necessary
+
+const announceFighters = fighters => {
+    for (let i = 0; i < fighters.length; i++) { 
+        console.log(`Introducing fighter ${fighters[i]}`)
+    }
 }
-
-//can be used with a .forEach in other circumstances/scenarios, but this is the easiest and more complicated loops are not necessary
-
+const array3 = ['Dylan', 'lloyd', 'tyson']
+announceFighters(array3)
