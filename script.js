@@ -2493,7 +2493,15 @@
 
 //given two small integer arrays, create a program that returns true if the sum of the squares of each element in array a is strictly greater than the sum of the cubes of each element in array b. 
 
-function compareSquareAndCube(a, b) {
-    return a.reduce((acc,c)=> acc + c**2,0) > b.reduce((acc, c) => acc + c**3,0)
+// function compareSquareAndCube(a, b) {
+//     return a.reduce((acc,c)=> acc + c**2,0) > b.reduce((acc, c) => acc + c**3,0)
+// }
+
+//array consisting of multiplication by their own index.
+
+const multOfIndex = (arr) => {
+    let newArr = []
+    arr.forEach((value, i) => newArr.push(value * i))
+    return newArr
 }
 
