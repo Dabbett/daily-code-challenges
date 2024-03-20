@@ -2507,10 +2507,16 @@
 
 //return an array which returns only the numbers that are multiples of their own index. 
 
-const multipleOfIndex = (arr) => {
-    return arr.filter((num, i) => {
-        if (i != 0) {
-            num % i === 0
-        }
-    })
+// const multipleOfIndex = (arr) => {
+//     return arr.filter((num, i) => {
+//         if (i != 0) {
+//             num % i === 0
+//         }
+//     })
+// }
+
+//write a function that can take an array of string and numbers and return the sum of all the values. 
+
+function sumAllDespiteType(arr) {
+    return arr.reduce((acc,c)=> acc += Number(c), 0)
 }
