@@ -2499,9 +2499,18 @@
 
 //array consisting of multiplication by their own index.
 
-const multOfIndex = (arr) => {
-    let newArr = []
-    arr.forEach((value, i) => newArr.push(value * i))
-    return newArr
-}
+// const multByIndex = (arr) => {
+//     let newArr = []
+//     arr.forEach((value, i) => newArr.push(value * i))
+//     return newArr
+// }
 
+//return an array which returns only the numbers that are multiples of their own index. 
+
+const multipleOfIndex = (arr) => {
+    return arr.filter((num, i) => {
+        if (i != 0) {
+            num % i === 0
+        }
+    })
+}
