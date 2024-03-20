@@ -2451,10 +2451,10 @@
 
 // //can be used with a .forEach in other circumstances/scenarios, but this is the easiest and more complicated loops are not necessary
 
-const announceFighters = fighters => {
-    for (let i = 0; i < fighters.length; i++) { 
-        console.log(`Introducing fighter ${fighters[i]}`)
-    }
-}
-const array3 = ['Dylan', 'lloyd', 'tyson']
-announceFighters(array3)
+// const announceFighters = fighters => {
+//     for (let i = 0; i < fighters.length; i++) { 
+//         console.log(`Introducing fighter ${fighters[i]}`)
+//     }
+// }
+// const array3 = ['Dylan', 'lloyd', 'tyson']
+// announceFighters(array3)
