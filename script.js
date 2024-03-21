@@ -2523,62 +2523,84 @@
 
 //OOP review
 
-class Contractor{
-    constructor(name, role){
-        this._name = name;
-        this._role = role;
-    }
-    get name(){
-        return this._name
+// class Contractor{
+//     constructor(name, role){
+//         this._name = name;
+//         this._role = role;
+//     }
+//     get name(){
+//         return this._name
+// }
+//     get role(){
+//         return this._role
+//     }
+//     introduce() {
+//         alert(`hey, I'm ${this._name} and I and a ${this._role}`)
+//     }
+//     sayName() {
+//         alert(`${this._name}`)
+//     }
+// }
+
+// class Front extends Contractor{
+//     constructor(name, role, tech) {
+//         super(name, role)
+//         this._tech = tech;
+//     }
+//     get tech() {
+//         return this._tech
+//     }
+//     introduce(){
+//         console.log(`hey, I'm ${this._name} and I work on the front-end as a ${this._role}`);
+//     }
+// }
+
+// class Back extends Contractor {
+//   constructor(name, role, tech) {
+//     super(name, role);
+//     this._tech = tech;
+//   }
+//   get tech() {
+//     return this._tech;
+//   }
+//     introduce() {
+//         console.log(
+//             `hey, I'm ${this._name} and I work on the front-end as a ${this._role}`
+//         );
+//     }
+// }
+
+
+// let machi = new Front('machine', 'front-end-eng', 'javascript')
+
+// let simba = new Back('Simba', 'backend-eng', 'python')
+
+// let john = new Front('john shawn', 'front-end-wiz', 'typescript')
+
+// let agencyList = [simba, machi, john]
+
+// for (person of agencyList) {
+//     person.introduce()
+// }
+
+//higherORDERfunctions
+
+const houseOne=()=>{
+    console.log('Ice cream delivered to house 1')
 }
-    get role(){
-        return this._role
-    }
-    introduce() {
-        alert(`hey, I'm ${this._name} and I and a ${this._role}`)
-    }
-    sayName() {
-        alert(`${this._name}`)
-    }
+
+const houseTwo=(callback)=>{
+    console.log('sherbet delivered to house 2', 3000)
+    callback()
 }
 
-class Front extends Contractor{
-    constructor(name, role, tech) {
-        super(name, role)
-        this._tech = tech;
-    }
-    get tech() {
-        return this._tech
-    }
-    introduce(){
-        console.log(`hey, I'm ${this._name} and I work on the front-end as a ${this._role}`);
-    }
+const houseThree=()=>{
+    console.log('sonic popsicle delivered to house 3')
 }
 
-class Back extends Contractor {
-  constructor(name, role, tech) {
-    super(name, role);
-    this._tech = tech;
-  }
-  get tech() {
-    return this._tech;
-  }
-    introduce() {
-        console.log(
-            `hey, I'm ${this._name} and I work on the front-end as a ${this._role}`
-        );
-    }
-}
+const deliverIceCream = () => {
+  houseOne();
+  houseTwo(houseThree);
+};
 
 
-let machi = new Front('machine', 'front-end-eng', 'javascript')
-
-let simba = new Back('Simba', 'backend-eng', 'python')
-
-let john = new Front('john shawn', 'front-end-wiz', 'typescript')
-
-let agencyList = [simba, machi, john]
-
-for (person of agencyList) {
-    person.introduce()
-}
