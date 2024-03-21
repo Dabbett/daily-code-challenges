@@ -2517,6 +2517,60 @@
 
 //write a function that can take an array of string and numbers and return the sum of all the values. 
 
-function sumAllDespiteType(arr) {
-    return arr.reduce((acc,c)=> acc + Number(c), 0)
+// function sumAllDespiteType(arr) {
+//     return arr.reduce((acc,c)=> acc + Number(c), 0)
+// }
+
+//OOP review
+
+class Contractor{
+    constructor(name, role){
+        this._name = name;
+        this._role = role;
+    }
+    get name(){
+        return this._name
 }
+    get role(){
+        return this._role
+    }
+    introduce() {
+        alert(`hey, I'm ${this._name} and I and a ${this._role}`)
+    }
+    sayName() {
+        alert(`${this._name}`)
+    }
+}
+
+class Front extends Contractor{
+    constructor(name, role, tech) {
+        super(name, role)
+        this._tech = tech;
+    }
+    get tech() {
+        return this._tech
+    }
+    introduce() {
+        console.log(`hey, I'm ${this._name} and I and I work on the front-end!`);
+    }
+}
+
+class Back extends Contractor {
+  constructor(name, role, tech) {
+    super(name, role);
+    this._tech = tech;
+  }
+  get tech() {
+    return this._tech;
+  }
+  introduce() {
+    console.log(`hey, I'm ${this._name} and I and I work on the Back-end!`);
+  }
+}
+
+
+let machi = new Front('machine', 'front-end-eng', 'javascript')
+
+let simba = new Back('Simba', 'backend-eng', 'python')
+
+simba.sayName
