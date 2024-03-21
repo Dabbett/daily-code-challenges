@@ -2550,8 +2550,8 @@ class Front extends Contractor{
     get tech() {
         return this._tech
     }
-    introduce() {
-        console.log(`hey, I'm ${this._name} and I and I work on the front-end!`);
+    introduce(){
+        console.log(`hey, I'm ${this._name} and I work on the front-end as a ${this._role}`);
     }
 }
 
@@ -2563,9 +2563,11 @@ class Back extends Contractor {
   get tech() {
     return this._tech;
   }
-  introduce() {
-    console.log(`hey, I'm ${this._name} and I and I work on the Back-end!`);
-  }
+    introduce() {
+        console.log(
+            `hey, I'm ${this._name} and I work on the front-end as a ${this._role}`
+        );
+    }
 }
 
 
@@ -2573,4 +2575,10 @@ let machi = new Front('machine', 'front-end-eng', 'javascript')
 
 let simba = new Back('Simba', 'backend-eng', 'python')
 
-simba.sayName
+let john = new Front('john shawn', 'front-end-wiz', 'typescript')
+
+let agencyList = [simba, machi, john]
+
+for (person of agencyList) {
+    person.introduce()
+}
