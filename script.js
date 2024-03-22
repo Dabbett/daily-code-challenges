@@ -2608,38 +2608,53 @@
 
 //async await practice: 
 
-function houseOne() {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve('ice Cream delivered to house 1')
-        }, 5000)
-    }) 
-}
+// function houseOne() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve('ice Cream delivered to house 1')
+//         }, 5000)
+//     }) 
+// }
 
-function houseTwo() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve("ice Cream delivered to house 2");
-    }, 3000);
-  });
-}
+// function houseTwo() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve("ice Cream delivered to house 2");
+//     }, 3000);
+//   });
+// }
 
-function houseThree() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve("ice Cream delivered to house 3");
-    }, 1000);
-  });
-}
-async function deliverIceCream(){
+// function houseThree() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve("ice Cream delivered to house 3");
+//     }, 1000);
+//   });
+// }
+// async function deliverIceCream(){
+//     try {
+//         const houseOneWait = await houseOne();
+//         const houseThreeWait = await houseThree()
+//         console.log(houseOneWait())
+//         console.log(houseTwoWait())
+//         console.log(houseThreeWait())
+//         const houseTwoWait = await houseTwo()
+//     } catch (error) {
+//         console.log("Error delivering ice cream.")
+//     }
+// }
+
+//More: 
+const getDogName = (name) => `Here ${name}!`;
+
+
+async function callDog(name) {
     try {
-        const houseOneWait = await houseOne();
-        const houseThreeWait = await houseThree()
-        console.log(houseOneWait())
-        console.log(houseTwoWait())
-        console.log(houseThreeWait())
-        const houseTwoWait = await houseTwo()
-    } catch (error) {
-        console.log("Error delivering ice cream.")
+        const callName = await getDogName(name)
+        console.log(callName)
+    } catch {
+        console.log('Error calling dog.')
     }
 }
+
+callDog("Spot")
