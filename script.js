@@ -2589,9 +2589,11 @@ const houseOne=()=>{
     console.log('Ice cream delivered to house 1')
 }
 
-const houseTwo=(callback)=>{
-    console.log('sherbet delivered to house 2', 3000)
-    callback()
+const houseTwo = (callback) => {
+    console.log('sherbet delivered to house 2')
+    setTimeout(() => {
+        callback();
+    }, 3000);
 }
 
 const houseThree=()=>{
@@ -2602,5 +2604,5 @@ const deliverIceCream = () => {
   houseOne();
   houseTwo(houseThree);
 };
-
+//*** a remindner, not ideal when nesting ***
 
