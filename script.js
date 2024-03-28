@@ -2645,16 +2645,17 @@
 // }
 
 //More: 
-const getDogName = (name) => `Here ${name}!`;
+// const getDogName = (name) => `Here ${name}!`;
 
 
-async function callDog(name) {
-    try {
-        const callName = await getDogName(name)
-        console.log(callName)
-    } catch {
-        console.log('Error calling dog.')
-    }
-}
+// async function callDog(name) {
+//     try {
+//         const callName = await getDogName(name)
+//         console.log(callName)
+//     } catch {
+//         console.log('Error calling dog.')
+//     }
+// }
 
-callDog("Spot")
+// callDog("Spot")
+
