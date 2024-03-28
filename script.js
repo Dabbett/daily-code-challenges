@@ -2659,3 +2659,17 @@
 
 // callDog("Spot")
 
+// object spread practice: 
+
+const defaultStyle = {
+    color: 'blue',
+    fontSize: 16,
+    fontWeight: 'normal'
+}
+
+const homeStyle = {
+    ...defaultStyle, //inheritance
+    fontWeight: 'bold', //overrides normal
+    backgroundColor: 'white'
+}
+
