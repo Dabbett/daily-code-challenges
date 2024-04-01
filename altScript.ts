@@ -14,20 +14,20 @@ console.log(arrayOfNames)
 // console.log(arrayOfNames);
 
 
-export interface EmployeeInterface {
-    name: string;
-    age: number;
-    sex: string;
-}
+// export interface EmployeeInterface {
+//     name: string;
+//     age: number;
+//     sex: string;
+// }
 
-export class Employee {
-    name: string
-    age: number
-    sex: string
+// export class Employee {
+//     name: string
+//     age: number
+//     sex: string
 
-    constructor(employeeData: EmployeeInterface) {
-        this.name = employeeData.name
-        this.age = employeeData.age
-        this.sex = employeeData.sex
-    }
-}
+//     constructor(employeeData: EmployeeInterface) {
+//         this.name = employeeData.name
+//         this.age = employeeData.age
+//         this.sex = employeeData.sex
+//     }
+// }
