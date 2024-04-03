@@ -31,3 +31,42 @@ console.log(arrayOfNames)
 //         this.sex = employeeData.sex
 //     }
 // }
+
+import React, { Component } from 'react';
+
+interface Props {
+    user: string;
+}
+
+interface State {
+    isLive: string | null;
+}
+
+class Live extends Component<Props, State> {
+    constructor(props: Props) {
+        super(props);
+        this.state = {
+            isLive: null
+        };
+    }
+
+    componentDidMount() {
+        const { state } = this.props;
+
+        if (state === true) {
+            this.setState({ isLive: `${this.props.user} is live` });
+        } else {
+            this.setState({ isLive: `${this.props.user} isn't live` });
+        }
+    }
+
+    render() {
+        return (
+            <div>
+                <p>{this.state.isLive}</p>
+            </div>
+        );
+    }
+}
+
+export default Live;

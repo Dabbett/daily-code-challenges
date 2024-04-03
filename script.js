@@ -2759,10 +2759,10 @@ class Live extends Component {
     }
 
     componentDidMount() {
-        // Assuming `user` is a prop passed to this component
+        
         const { user } = this.props;
 
-        // Assuming `state` variable is coming from some external source
+        
         const { state } = this.state;
 
         // Check if the user is live based on the state
@@ -2783,4 +2783,5 @@ class Live extends Component {
 }
 
 export default Live;
+//** converted to typescript in separate file altscript.ts **
 
