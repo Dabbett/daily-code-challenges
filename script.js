@@ -2680,26 +2680,44 @@
 //   }
   
 
-function getLength(arr){
-    //return length of arr
-    return arr.length
-  }
-  function getFirst(arr){
-    //return the first element of arr
-    return arr[0]
-  }
-  function getLast(arr){
-    //return the last element of arr
-    return arr[getLength(arr)-1]
-  }
-  function pushElement(arr){
-    var el=1;
-    //push el to arr
-    arr.push(el)
-    return arr
-  }
-  function popElement(arr){
-    //pop an element from arr
-    arr.pop()
-    return arr
-  }
+// function getLength(arr){
+//     //return length of arr
+//     return arr.length
+//   }
+//   function getFirst(arr){
+//     //return the first element of arr
+//     return arr[0]
+//   }
+//   function getLast(arr){
+//     //return the last element of arr
+//     return arr[getLength(arr)-1]
+//   }
+//   function pushElement(arr){
+//     var el=1;
+//     //push el to arr
+//     arr.push(el)
+//     return arr
+//   }
+//   function popElement(arr){
+//     //pop an element from arr
+//     arr.pop()
+//     return arr
+//   }
+
+// function count(arr) {
+//     return arr.length;
+// }
+
+// const people = ['john', 'ron', 'paul'];
+
+// // Function to handle the like event
+// function handleLike() {
+//     const user = 'newUser'; // Get the user who liked the post
+//     people.push(user); // push the user to the people arr
+//     const countDisplay = document.getElementById('countDisplay');
+//     countDisplay.textContent = `${count(people)} like this post`; // Update the count display
+// }
+
+// // Attach event listener to the like icon
+// const likeIcon = document.getElementById('likeIcon');
+// likeIcon.addEventListener('click', handleLike);
