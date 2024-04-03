@@ -2721,3 +2721,30 @@
 // // Attach event listener to the like icon
 // const likeIcon = document.getElementById('likeIcon');
 // likeIcon.addEventListener('click', handleLike);
+
+//class Practice:
+
+import {component} from "react";
+
+class Counter extends Component {
+  state = { count: 0};
+  
+  componentDidMount(){
+    setInterval(() => {
+        this.setState({ count: this.state.count + 1});
+    }, 1000);
+  }
+  
+  render() {
+    const {count}= this.state;
+    const { color, size } = this.props;
+    
+    return (
+        <div> 
+            <h1> Doesn't Change</h1>
+            <p style={{ color, fontSize: size }}>{count}</p>
+        </div>
+    )
+  }
+}
+
