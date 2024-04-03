@@ -2724,27 +2724,63 @@
 
 //class Practice:
 
-import {component} from "react";
+// import {component} from "react";
 
-class Counter extends Component {
-  state = { count: 0};
+// class Counter extends Component {
+//   state = { count: 0};
   
-  componentDidMount(){
-    setInterval(() => {
-        this.setState({ count: this.state.count + 1});
-    }, 1000);
-  }
+//   componentDidMount(){
+//     setInterval(() => {
+//         this.setState({ count: this.state.count + 1});
+//     }, 1000);
+//   }
   
-  render() {
-    const {count}= this.state;
-    const { color, size } = this.props;
+//   render() {
+//     const {count}= this.state;
+//     const { color, size } = this.props;
     
-    return (
-        <div> 
-            <h1> Doesn't Change</h1>
-            <p style={{ color, fontSize: size }}>{count}</p>
-        </div>
-    )
-  }
+//     return (
+//         <div> 
+//             <h1> Doesn't Change</h1>
+//             <p style={{ color, fontSize: size }}>{count}</p>
+//         </div>
+//     )
+//   }
+// }
+
+import React, { Component } from 'react';
+
+class Live extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isLive: null
+        };
+    }
+
+    componentDidMount() {
+        // Assuming `user` is a prop passed to this component
+        const { user } = this.props;
+
+        // Assuming `state` variable is coming from some external source
+        const { state } = this.state;
+
+        // Check if the user is live based on the state
+        if (state === true) {
+            this.setState({ isLive: `${user} is live` });
+        } else {
+            this.setState({ isLive: `${user} isn't live` });
+        }
+    }
+
+    render() {
+        return (
+            <div>
+                <p>{this.state.isLive}</p>
+            </div>
+        );
+    }
 }
+
+export default Live;
 
