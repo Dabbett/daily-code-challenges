@@ -77,8 +77,12 @@ let isStudent: boolean;
 let hobbies: string[];
 let role: [number, string];
 
+type Human = {
+    legs: number,
+    arms: number,
+}
 
-type Person = {
+interface Person extends Human {
     uName: string;
     age?: number;
 }
@@ -91,6 +95,13 @@ function printName(person: Person){
     console.log(person.uName);
 }
 
-function notifyAge(person: Person){
-   console.log(`${title(person.uName)} is ${person.age} today.`);
+
+interface Programmer extends Person {
+    job: string,
+    frontEnd: boolean
 }
+
+function notifyAge(programmer: Programmer){
+    console.log(`${title(programmer.uName)} is ${programmer.age} today.`);
+ }
+ 
