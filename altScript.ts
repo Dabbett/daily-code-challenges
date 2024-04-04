@@ -83,10 +83,14 @@ type Person = {
     age?: number;
 }
 
+const title = (word: string): string => {
+    return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+}; 
+
 function printName(person: Person){
     console.log(person.uName);
 }
 
 function notifyAge(person: Person){
-   console.log(`${person.uName} is ${person.age} today.`);
+   console.log(`${title(person.uName)} is ${person.age} today.`);
 }
