@@ -1,9 +1,9 @@
-let arrayOfNames: string[] = []
-arrayOfNames[0] = 'Ron Franklin'
-arrayOfNames.push('Sam Costa')
-arrayOfNames[2] = 'Amber Hudson'
+// let arrayOfNames: string[] = []
+// arrayOfNames[0] = 'Ron Franklin'
+// arrayOfNames.push('Sam Costa')
+// arrayOfNames[2] = 'Amber Hudson'
 
-console.log(arrayOfNames)
+// console.log(arrayOfNames)
 
 
 // when running, compiles to JS: 
@@ -32,41 +32,61 @@ console.log(arrayOfNames)
 //     }
 // }
 
-import React, { Component } from 'react';
+// import React, { Component } from 'react';
 
-interface Props {
-    user: string;
+// interface Props {
+//     user: string;
+// }
+
+// interface State {
+//     isLive: string | null;
+// }
+
+// class Live extends Component<Props, State> {
+//     constructor(props: Props) {
+//         super(props);
+//         this.state = {
+//             isLive: null
+//         };
+//     }
+
+//     componentDidMount() {
+//         const { state } = this.props;
+
+//         if (state === true) {
+//             this.setState({ isLive: `${this.props.user} is live` });
+//         } else {
+//             this.setState({ isLive: `${this.props.user} isn't live` });
+//         }
+//     }
+
+//     render() {
+//         return (
+//             <div>
+//                 <p>{this.state.isLive}</p>
+//             </div>
+//         );
+//     }
+// }
+
+// export default Live;
+
+let uName: string;
+let age: number;
+let isStudent: boolean;
+let hobbies: string[];
+let role: [number, string];
+
+
+type Person = {
+    uName: string;
+    age?: number;
 }
 
-interface State {
-    isLive: string | null;
+function printName(person: Person){
+    console.log(person.uName);
 }
 
-class Live extends Component<Props, State> {
-    constructor(props: Props) {
-        super(props);
-        this.state = {
-            isLive: null
-        };
-    }
-
-    componentDidMount() {
-        const { state } = this.props;
-
-        if (state === true) {
-            this.setState({ isLive: `${this.props.user} is live` });
-        } else {
-            this.setState({ isLive: `${this.props.user} isn't live` });
-        }
-    }
-
-    render() {
-        return (
-            <div>
-                <p>{this.state.isLive}</p>
-            </div>
-        );
-    }
+function notifyAge(person: Person){
+   console.log(`${person.uName} is ${person.age} today.`);
 }
-
-export default Live;
