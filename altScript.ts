@@ -71,37 +71,91 @@
 
 // export default Live;
 
-let uName: string;
-let age: number;
-let isStudent: boolean;
-let hobbies: string[];
-let role: [number, string];
+// let uName: string;
+// let age: number;
+// let isStudent: boolean;
+// let hobbies: string[];
+// let role: [number, string];
 
-type Human = {
-    legs: number,
-    arms: number,
-}
+// type Human = {
+//     legs: number,
+//     arms: number,
+// }
 
-interface Person extends Human {
-    uName: string;
-    age?: number;
-}
+// interface Person extends Human {
+//     uName: string;
+//     age?: number;
+// }
 
-const title = (word: string): string => {
-    return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
-}; 
+// const title = (word: string): string => {
+//     return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+// }; 
 
-function printName(person: Person){
-    console.log(person.uName);
-}
+// function printName(person: Person){
+//     console.log(person.uName);
+// }
 
 
-interface Programmer extends Person {
-    job: string,
-    frontEnd: boolean
-}
+// interface Programmer extends Person {
+//     job: string,
+//     frontEnd: boolean
+// }
 
-function notifyAge(programmer: Programmer){
-    console.log(`${title(programmer.uName)} is ${programmer.age} today.`);
- }
+// function notifyAge(programmer: Programmer){
+//     console.log(`${title(programmer.uName)} is ${programmer.age} today.`);
+//  }
  
+
+// PresentationalComponent.tsx
+// import React, { Component } from 'react';
+
+// interface PresentationalProps {
+//   message: string;
+// }
+
+// class PresentationalComponent extends Component<PresentationalProps> {
+//   render() {
+//     const { message } = this.props;
+//     return (
+//       <div>
+//         <h1>Presentational Component</h1>
+//         <p>{message}</p>
+//       </div>
+//     );
+//   }
+// }
+// ----------------
+// export default PresentationalComponent;
+
+// // ContainerComponent.tsx
+// import React, { Component } from 'react';
+// import PresentationalComponent from './PresentationalComponent';
+
+// interface ContainerState {
+//   message: string;
+// }
+
+// class ContainerComponent extends Component<{}, ContainerState> {
+//   constructor(props: {}) {
+//     super(props);
+//     this.state = {
+//       message: 'Hello from Container!'
+//     };
+//   }
+
+//   handleButtonClick = () => {
+//     this.setState({ message: 'Updated message from Container!' });
+//   };
+
+//   render() {
+//     return (
+//       <div>
+//         <h1>Container Component</h1>
+//         <button onClick={this.handleButtonClick}>Update Message</button>
+//         <PresentationalComponent message={this.state.message} />
+//       </div>
+//     );
+//   }
+// }
+
+// export default ContainerComponent;
