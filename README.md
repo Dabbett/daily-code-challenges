@@ -1,6 +1,6 @@
 Daily JavaScript Practice
 
-Welcome to my daily JavaScript practice repository! Here, I commit to honing my skills in JavaScript through daily practice and exploration. As a dedicated developer, I understand the importance of consistent learning and improvement in the ever-evolving field of web development.
+Welcome to my daily JavaScript practice repository! Here, I commit to honing my skills in JavaScript through daily practice and exploration. As a developer, I understand the importance of consistent learning and improvement in the ever-evolving field of web development.
 
 ## Motivation
 
