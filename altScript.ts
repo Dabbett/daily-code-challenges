@@ -202,6 +202,26 @@
 // }
 
 //returning and array with the inverse (pos/neg) of each number.
-export function invert(array: number[]): number[] {
-  return array.map(num => num < 0? Math.abs(num): -num);
+// export function invert(array: number[]): number[] {
+//   return array.map(num => num < 0? Math.abs(num): -num);
+// }
+
+//espresso machine constructor in TS this time.
+class makeEspressoMachine {
+    brand: string
+    capacity: number
+    cup: number
+    temp: number
+    pressure: number
+
+    constructor(brand:string, beanCapacity:number, cupQuantity:number, highestTemp:number, pressure:number){
+        this.brand = brand
+        this.capacity = beanCapacity
+        this.cup = cupQuantity
+        this.temp = highestTemp
+        this.pressure = pressure
+    }
+    brew() {
+    console.log(`brewing ${this.cup} cups at ${this.temp}degrees F and ${this.pressure} kPa`)
+}
 }
