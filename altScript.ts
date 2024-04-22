@@ -192,19 +192,19 @@
 // }
 
 // // calculate shark attack outcome
-// export function shark(pontoonDistance: number, sharkDistance: number, yourSpeed: number, sharkSpeed: number, dolphin: boolean): string {
-//   if(dolphin === false) {
-//     return sharkDistance/sharkSpeed > pontoonDistance/yourSpeed ? 'Alive!' : 'Shark Bait!'
-//   } else {
-//     let slowedSharkSpeed = sharkSpeed/2;
-//     return sharkDistance/slowedSharkSpeed > pontoonDistance/yourSpeed ? 'Alive!' : 'Shark Bait!'
-//   };
-// }
+export function shark(pontoonDistance: number, sharkDistance: number, yourSpeed: number, sharkSpeed: number, dolphin: boolean): string {
+  if(dolphin === false) {
+    return sharkDistance/sharkSpeed > pontoonDistance/yourSpeed ? 'Alive!' : 'Shark Bait!'
+  } else {
+    let slowedSharkSpeed = sharkSpeed/2;
+    return sharkDistance/slowedSharkSpeed > pontoonDistance/yourSpeed ? 'Alive!' : 'Shark Bait!'
+  };
+}
 
 //returning and array with the inverse (pos/neg) of each number.
-// export function invert(array: number[]): number[] {
-//   return array.map(num => num < 0? Math.abs(num): -num);
-// }
+export function invert(array: number[]): number[] {
+  return array.map(num => num < 0? Math.abs(num): -num);
+}
 
 //espresso machine constructor in TS this time.
 class makeEspressoMachine {
