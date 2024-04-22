@@ -159,7 +159,7 @@ function shark(pontoonDistance, sharkDistance, yourSpeed, sharkSpeed, dolphin) {
         return sharkDistance / sharkSpeed > pontoonDistance / yourSpeed ? 'Alive!' : 'Shark Bait!';
     }
     else {
-        var slowedSharkSpeed = sharkSpeed / 2;
+        let slowedSharkSpeed = sharkSpeed / 2;
         return sharkDistance / slowedSharkSpeed > pontoonDistance / yourSpeed ? 'Alive!' : 'Shark Bait!';
     }
     ;
@@ -167,20 +167,19 @@ function shark(pontoonDistance, sharkDistance, yourSpeed, sharkSpeed, dolphin) {
 exports.shark = shark;
 //returning and array with the inverse (pos/neg) of each number.
 function invert(array) {
-    return array.map(function (num) { return num < 0 ? Math.abs(num) : -num; });
+    return array.map(num => num < 0 ? Math.abs(num) : -num);
 }
 exports.invert = invert;
 //espresso machine constructor in TS this time.
-var makeEspressoMachine = /** @class */ (function () {
-    function makeEspressoMachine(brand, beanCapacity, cupQuantity, highestTemp, pressure) {
+class makeEspressoMachine {
+    constructor(brand, beanCapacity, cupQuantity, highestTemp, pressure) {
         this.brand = brand;
         this.capacity = beanCapacity;
         this.cup = cupQuantity;
         this.temp = highestTemp;
         this.pressure = pressure;
     }
-    makeEspressoMachine.prototype.brew = function () {
-        console.log("brewing ".concat(this.cup, " cups at ").concat(this.temp, "degrees F and ").concat(this.pressure, " kPa"));
-    };
-    return makeEspressoMachine;
-}());
+    brew() {
+        console.log(`Brewing ${this.cup} cups at ${this.temp}degrees F and ${this.pressure} kPa!`);
+    }
+}

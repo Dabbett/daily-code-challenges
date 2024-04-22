@@ -222,6 +222,6 @@ class makeEspressoMachine {
         this.pressure = pressure
     }
     brew() {
-    console.log(`brewing ${this.cup} cups at ${this.temp}degrees F and ${this.pressure} kPa`)
+    console.log(`Brewing ${this.cup} cups at ${this.temp}degrees F and ${this.pressure} kPa!`)
 }
 }
