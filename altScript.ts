@@ -183,10 +183,20 @@
 // }
 
 //calc how many blank pages aer needed. if either number is 0, return 0
-export function paperwork(classmates: number, pages :number): number{
-  if(classmates < 0 || pages < 0) {
-    return 0;
-  }
+// export function paperwork(classmates: number, pages :number): number{
+//   if(classmates < 0 || pages < 0) {
+//     return 0;
+//   }
   
-  return classmates * pages;
+//   return classmates * pages;
+// }
+
+// calculate shark attack outcome
+export function shark(pontoonDistance: number, sharkDistance: number, yourSpeed: number, sharkSpeed: number, dolphin: boolean): string {
+  if(dolphin === false) {
+    return sharkDistance/sharkSpeed > pontoonDistance/yourSpeed ? 'Alive!' : 'Shark Bait!'
+  } else {
+    let slowedSharkSpeed = sharkSpeed/2;
+    return sharkDistance/slowedSharkSpeed > pontoonDistance/yourSpeed ? 'Alive!' : 'Shark Bait!'
+  };
 }
