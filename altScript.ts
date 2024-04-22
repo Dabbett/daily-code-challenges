@@ -183,13 +183,13 @@
 // }
 
 //calc how many blank pages aer needed. if either number is 0, return 0
-// export function paperwork(classmates: number, pages :number): number{
-//   if(classmates < 0 || pages < 0) {
-//     return 0;
-//   }
+export function paperwork(classmates: number, pages :number): number{
+  if(classmates < 0 || pages < 0) {
+    return 0;
+  }
   
-//   return classmates * pages;
-// }
+  return classmates * pages;
+}
 
 // // calculate shark attack outcome
 export function shark(pontoonDistance: number, sharkDistance: number, yourSpeed: number, sharkSpeed: number, dolphin: boolean): string {
@@ -225,3 +225,17 @@ class makeEspressoMachine {
     console.log(`Brewing ${this.cup} cups at ${this.temp}degrees F and ${this.pressure} kPa!`)
 }
 }
+
+let numGrades:number[] = []
+let letterGrades:string[] = []
+
+numGrades = [1,2,3,4,5]
+
+letterGrades= ['a','b','c']
+
+let student_grade:(string | number) = "pass"
+
+let mixedArrays:(number | boolean)[] = [1,2,3,true,false]
+
+let arrayOfNumbersOrBooleans:(number[] | boolean[]) = [1,2,3,4,5] || [true, false]
+
