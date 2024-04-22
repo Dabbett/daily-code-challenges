@@ -160,25 +160,33 @@
 
 // export default ContainerComponent;
 
-export class Cube {
+// export class Cube {
   
-  private _side: number = 0;
+//   private _side: number = 0;
 
-  constructor(side?: number) {
-    if (side === undefined) {
-      this._side = 0; // Assign 0 if no argument is provided
-    } else {
-      this.setSide(side); // Call setSide method to handle negative values
-    }
-  }
+//   constructor(side?: number) {
+//     if (side === undefined) {
+//       this._side = 0; // Assign 0 if no argument is provided
+//     } else {
+//       this.setSide(side); // Call setSide method to handle negative values
+//     }
+//   }
 
-  public getSide(): number {
-    return this._side;
-  }
+//   public getSide(): number {
+//     return this._side;
+//   }
 
-  public setSide(value: number) {
-    // Ensure the value is positive
-    this._side = Math.abs(value);
+//   public setSide(value: number) {
+//     // Ensure the value is positive
+//     this._side = Math.abs(value);
+//   }
+// }
+
+//calc how many blank pages aer needed. if either number is 0, return 0
+export function paperwork(classmates: number, pages :number): number{
+  if(classmates < 0 || pages < 0) {
+    return 0;
   }
+  
+  return classmates * pages;
 }
-
