@@ -34,3 +34,23 @@ console.log(student_info({
     GPA_value: 4.2
 }))
 
+
+// -------- interfaces:
+
+interface Person {
+    firstName: string;
+    lastName: string;
+    age: number;
+    greet: () => void;
+}
+
+const person: Person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 30,
+    greet: function() {
+        console.log(`Hello, my name is ${this.firstName} ${this.lastName} and I am ${this.age} years old.`);
+    }
+};
+
+person.greet();

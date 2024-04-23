@@ -2785,3 +2785,10 @@ class Live extends Component {
 export default Live;
 //** converted to typescript in separate file altscript.ts **
 
+//combine two arrays, ensure they are numbers and order them largest to smallest. if there is a duplicated, omit it. 
+
+let arrOfNums = [1,2,5,9,4]
+let arrOfNums2 = [1,3,2,6,7]
+
+let combinedArr = arrOfNums.concat(arrOfNums2).sort((a,b) => b - a).filter
+let uniqueNums =combinedArr.filter(num => arrOfNums)
