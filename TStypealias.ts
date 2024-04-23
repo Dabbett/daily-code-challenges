@@ -38,19 +38,19 @@ console.log(student_info({
 // -------- interfaces:
 
 interface Person {
-    firstName: string;
-    lastName: string;
-    age: number;
-    greet: () => void;
+    first_name: string,
+    last_name: string,
+    age: number
 }
 
-const person: Person = {
-    firstName: "John",
-    lastName: "Doe",
-    age: 30,
-    greet: function() {
-        console.log(`Hello, my name is ${this.firstName} ${this.lastName} and I am ${this.age} years old.`);
-    }
-};
+interface Employee extends Person {
+    employee_ID: number
+}
 
-person.greet();
+const johnM: Employee = {
+    first_name:'john',
+    last_name:'smith',
+    age: 30,
+    employee_ID: 234
+}
+console.log(`I am ${johnM.first_name} ${johnM.last_name}, and my ID is ${johnM.employee_ID} `)
