@@ -14,15 +14,23 @@ type Student = {
     is_enrolled: boolean
 }
 
-let student_info = (info:Student) : string => {
+type StudentGPA = {
+    GPA_value: number
+}
+
+type StudentWithGPA = Student & StudentGPA
+
+
+let student_info = (info:StudentWithGPA, school:string= "West High") : string => {
     let enrolled = info.is_enrolled ?"" : "not"
-    return `${info.first_name} ${info.last_name} is ${enrolled} enrolled.`
+    return `${info.first_name} ${info.last_name} is ${enrolled} enrolled at ${school}.`
 }
 
 console.log(student_info({
     student_id: 514,
     first_name: "Dylan",
     last_name: "Abbett",
-    is_enrolled: true
+    is_enrolled: true,
+    GPA_value: 4.2
 }))
 
