@@ -269,4 +269,6 @@ function isItSummer(month: Month) {
   return isSummer
 }
 
-console.log(isItSummer(Month.Jun))
+// console.log(isItSummer(Month.Jun))
+
+
