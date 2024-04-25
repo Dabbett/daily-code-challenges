@@ -272,3 +272,7 @@ function isItSummer(month: Month) {
 // console.log(isItSummer(Month.Jun))
 
 
+export function parseF(s:string): number|null {
+  const parsedNum = parseFloat(s);
+  return isNaN(parsedNum)? null : parsedNum
+}
