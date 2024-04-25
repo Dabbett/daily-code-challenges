@@ -276,3 +276,10 @@ export function parseF(s:string): number|null {
   const parsedNum = parseFloat(s);
   return isNaN(parsedNum)? null : parsedNum
 }
+
+//USD to Yuan converter 
+
+export const usdcny = (usd: number): string => {
+  let yuan = usd * 6.75
+  return `${yuan.toFixed(2)} Chinese Yuan`;
+}
