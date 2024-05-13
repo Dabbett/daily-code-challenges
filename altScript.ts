@@ -283,3 +283,5 @@ export const usdcny = (usd: number): string => {
   let yuan = usd * 6.75
   return `${yuan.toFixed(2)} Chinese Yuan`;
 }
+
+//
