@@ -288,3 +288,22 @@ export const usdcny = (usd: number): string => {
 export function findDifference(a: [number, number, number], b: [number, number, number]): number{
   return Math.abs(a.reduce((acc,num) => acc *= num,1) - b.reduce((acc,num) => acc *= num,1))
 }
+
+export enum Color {Red = 1, Green = 2, Blue = 4};
+export var var1Boolean: boolean = true,
+          var2Decimal: number = 13, 
+          var3Hex: number = 0xf00d, 
+          var4Binary : number = 0b111111,
+          var5Octal: number = 0o744,
+          var6String: string = 'Hello, world!',
+          var7Array: any[] =[1, 'test', {a: 3}, 4, 5],
+          var8NumericArray: Array<number> = [1, 2, 3, 4, 5],
+          var9Tuple:[string ,number] =['key', 12345],
+          var10Enum:Color = Color.Blue,
+          var11ArrayOfAny: Array<any> = [1, 'test', {a: 3}, 4, 5],
+          var12VoidFunction = function():void {},
+          var13Null : null =null,
+          var14Undefined  : undefined = undefined,
+          var15NeverFunction = function():never  { throw new Error(); };
+
+          //need more work on ENUMS
