@@ -284,4 +284,7 @@ export const usdcny = (usd: number): string => {
   return `${yuan.toFixed(2)} Chinese Yuan`;
 }
 
-//
+//compare two cubes to find the volumetric difference.
+export function findDifference(a: [number, number, number], b: [number, number, number]): number{
+  return Math.abs(a.reduce((acc,num) => acc *= num,1) - b.reduce((acc,num) => acc *= num,1))
+}
