@@ -2792,3 +2792,19 @@ let arrOfNums2 = [1,3,2,6,7]
 
 let combinedArr = arrOfNums.concat(arrOfNums2).sort((a,b) => b - a).filter
 let uniqueNums =combinedArr.filter(num => arrOfNums)
+
+//promises basics review 
+let p = new Promise((resolve, reject) => {
+    let a = 1 + 1
+    if (a===2) {
+        resolve('success')
+    } else {
+        reject('failed')
+    }
+})
+
+p.then((message) => {
+    console.log('this is in the then ' + message)
+}).catch((message) => {
+    console.log('this is in the catch ' + message)
+})
