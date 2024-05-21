@@ -2808,3 +2808,24 @@ p.then((message) => {
 }).catch((message) => {
     console.log('this is in the catch ' + message)
 })
+
+// Create a new promise
+const fetchData = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        const success = true; // Simulating success or failure
+        if (success) {
+            resolve("Data fetched successfully");
+        } else {
+            reject("Error fetching data");
+        }
+    }, 2000); // Simulate a delay of 2 seconds
+});
+
+// Handle the resolved or rejected state
+fetchData
+    .then((result) => {
+        console.log(result); // Output: "Data fetched successfully" if successful
+    })
+    .catch((error) => {
+        console.error(error); // Output: "Error fetching data" if there's an error
+    });
