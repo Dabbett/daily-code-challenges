@@ -307,3 +307,8 @@ export var var1Boolean: boolean = true,
           var15NeverFunction = function():never  { throw new Error(); };
 
           //need more work on ENUMS
+
+          //convert array of arrays into csv representation 
+          export function toCsvText(array:number[][]):string {
+            return array.map(row => row.join(',')).join('\n')
+         }
