@@ -312,3 +312,8 @@ export var var1Boolean: boolean = true,
           export function toCsvText(array:number[][]):string {
             return array.map(row => row.join(',')).join('\n')
          }
+
+         //.sort practice: 
+         export function sortMe (names: string[]): string[] {
+          return names.sort()
+        }
