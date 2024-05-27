@@ -337,3 +337,5 @@ export function movie(card: number, ticket: number, perc: number): number {
   export function evenNumbers(array: number[], n: number): number[] {
   return array.reverse().filter(num => num%2===0).slice(0,n).reverse()
 }
+
+//happy memorial day .
