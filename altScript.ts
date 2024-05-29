@@ -317,3 +317,19 @@ export var var1Boolean: boolean = true,
          export function sortMe (names: string[]): string[] {
           return names.sort()
         }
+
+        export function movie(card: number, ticket: number, perc: number): number {
+          let totalA = 0
+          let totalB = card
+          let numTickets = 0
+          let currentTicketPrice = ticket
+          
+          while(Math.ceil(totalB) >= totalA){
+            numTickets++
+            totalA += ticket
+            currentTicketPrice *= perc
+            totalB += currentTicketPrice
+          }
+         
+         return numTickets
+         }
