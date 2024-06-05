@@ -341,3 +341,8 @@ export function movie(card: number, ticket: number, perc: number): number {
 export function evenNumbers(array: number[], n: number): number[] {
   return array.filter(x => x % 2 === 0).slice(-n);
 }
+
+export function stringToArray(s: string): string[] {
+	return s.split(" ")
+}
+
