@@ -346,3 +346,7 @@ export function stringToArray(s: string): string[] {
 	return s.split(" ")
 }
 
+export function isIsogram(str: string): boolean{
+  const charSet = new Set(str.toLowerCase())
+  return charSet.size === str.length
+ }
