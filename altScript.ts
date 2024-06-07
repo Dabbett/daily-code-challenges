@@ -350,3 +350,13 @@ export function isIsogram(str: string): boolean{
   const charSet = new Set(str.toLowerCase())
   return charSet.size === str.length
  }
+
+ export function countLettersAndDigits(input: string): number {
+  let count = 0
+  for(let char of input) {
+    if(char.match(/[a-zA-Z0-9]/)){
+                  count++
+                  }
+  }
+  return count
+}
