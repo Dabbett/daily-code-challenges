@@ -4,7 +4,7 @@
 // arrayOfNames.push('Sam Costa')
 // arrayOfNames[2] = 'Amber Hudson'
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.invert = exports.shark = void 0;
+exports.catMouse = exports.createPhoneNumber2 = exports.createPhoneNumber = exports.countLettersAndDigits = exports.isIsogram = exports.stringToArray = exports.evenNumbers = exports.movie = exports.sortMe = exports.toCsvText = exports.var15NeverFunction = exports.var14Undefined = exports.var13Null = exports.var12VoidFunction = exports.var11ArrayOfAny = exports.var10Enum = exports.var9Tuple = exports.var8NumericArray = exports.var7Array = exports.var6String = exports.var5Octal = exports.var4Binary = exports.var3Hex = exports.var2Decimal = exports.var1Boolean = exports.Color = exports.findDifference = exports.usdcny = exports.parseF = exports.invert = exports.shark = exports.paperwork = void 0;
 // console.log(arrayOfNames)
 // when running, compiles to JS: 
 // var arrayOfNames = [];
@@ -147,19 +147,20 @@ exports.invert = exports.shark = void 0;
 //   }
 // }
 //calc how many blank pages aer needed. if either number is 0, return 0
-// export function paperwork(classmates: number, pages :number): number{
-//   if(classmates < 0 || pages < 0) {
-//     return 0;
-//   }
-//   return classmates * pages;
-// }
+function paperwork(classmates, pages) {
+    if (classmates < 0 || pages < 0) {
+        return 0;
+    }
+    return classmates * pages;
+}
+exports.paperwork = paperwork;
 // // calculate shark attack outcome
 function shark(pontoonDistance, sharkDistance, yourSpeed, sharkSpeed, dolphin) {
     if (dolphin === false) {
         return sharkDistance / sharkSpeed > pontoonDistance / yourSpeed ? 'Alive!' : 'Shark Bait!';
     }
     else {
-        let slowedSharkSpeed = sharkSpeed / 2;
+        var slowedSharkSpeed = sharkSpeed / 2;
         return sharkDistance / slowedSharkSpeed > pontoonDistance / yourSpeed ? 'Alive!' : 'Shark Bait!';
     }
     ;
@@ -167,22 +168,154 @@ function shark(pontoonDistance, sharkDistance, yourSpeed, sharkSpeed, dolphin) {
 exports.shark = shark;
 //returning and array with the inverse (pos/neg) of each number.
 function invert(array) {
-    return array.map(num => num < 0 ? Math.abs(num) : -num);
+    return array.map(function (num) { return num < 0 ? Math.abs(num) : -num; });
 }
 exports.invert = invert;
 //espresso machine constructor in TS this time.
-class makeEspressoMachine {
-    constructor(brand, beanCapacity, cupQuantity, highestTemp, pressure) {
+var makeEspressoMachine = /** @class */ (function () {
+    function makeEspressoMachine(brand, beanCapacity, cupQuantity, highestTemp, pressure) {
         this.brand = brand;
         this.capacity = beanCapacity;
         this.cup = cupQuantity;
         this.temp = highestTemp;
         this.pressure = pressure;
     }
-    brew() {
-        console.log(`Brewing ${this.cup} cups at ${this.temp}degrees F and ${this.pressure} kPa!`);
+    makeEspressoMachine.prototype.brew = function () {
+        console.log("Brewing ".concat(this.cup, " cups at ").concat(this.temp, "degrees F and ").concat(this.pressure, " kPa!"));
+    };
+    return makeEspressoMachine;
+}());
+var numGrades = [];
+var letterGrades = [];
+numGrades = [1, 2, 3, 4, 5];
+letterGrades = ['a', 'b', 'c'];
+var student_grade = "pass";
+var mixedArrays = [1, 2, 3, true, false];
+var arrayOfNumbersOrBooleans = [1, 2, 3, 4, 5] || [true, false];
+var Month;
+(function (Month) {
+    Month[Month["Jan"] = 0] = "Jan";
+    Month[Month["Feb"] = 1] = "Feb";
+    Month[Month["Mar"] = 2] = "Mar";
+    Month[Month["Apr"] = 3] = "Apr";
+    Month[Month["May"] = 4] = "May";
+    Month[Month["Jun"] = 5] = "Jun";
+    Month[Month["Jul"] = 6] = "Jul";
+    Month[Month["Aug"] = 7] = "Aug";
+    Month[Month["Sep"] = 8] = "Sep";
+    Month[Month["Oct"] = 9] = "Oct";
+    Month[Month["Nov"] = 10] = "Nov";
+    Month[Month["Dec"] = 11] = "Dec";
+})(Month || (Month = {}));
+function isItSummer(month) {
+    var isSummer;
+    switch (month) {
+        case Month.Jun:
+        case Month.Jul:
+        case Month.Aug:
+            isSummer = true;
+            break;
+        default:
+            isSummer = false;
+            break;
     }
+    return isSummer;
 }
-
-
-
+// console.log(isItSummer(Month.Jun))
+function parseF(s) {
+    var parsedNum = parseFloat(s);
+    return isNaN(parsedNum) ? null : parsedNum;
+}
+exports.parseF = parseF;
+//USD to Yuan converter 
+var usdcny = function (usd) {
+    var yuan = usd * 6.75;
+    return "".concat(yuan.toFixed(2), " Chinese Yuan");
+};
+exports.usdcny = usdcny;
+//compare two cubes to find the volumetric difference.
+function findDifference(a, b) {
+    return Math.abs(a.reduce(function (acc, num) { return acc *= num; }, 1) - b.reduce(function (acc, num) { return acc *= num; }, 1));
+}
+exports.findDifference = findDifference;
+var Color;
+(function (Color) {
+    Color[Color["Red"] = 1] = "Red";
+    Color[Color["Green"] = 2] = "Green";
+    Color[Color["Blue"] = 4] = "Blue";
+})(Color || (exports.Color = Color = {}));
+;
+var var12VoidFunction = function () { }, var15NeverFunction = function () { throw new Error(); };
+exports.var1Boolean = true, exports.var2Decimal = 13, exports.var3Hex = 0xf00d, exports.var4Binary = 63, exports.var5Octal = 484, exports.var6String = 'Hello, world!', exports.var7Array = [1, 'test', { a: 3 }, 4, 5], exports.var8NumericArray = [1, 2, 3, 4, 5], exports.var9Tuple = ['key', 12345], exports.var10Enum = Color.Blue, exports.var11ArrayOfAny = [1, 'test', { a: 3 }, 4, 5], exports.var12VoidFunction = var12VoidFunction, exports.var13Null = null, exports.var14Undefined = undefined, exports.var15NeverFunction = var15NeverFunction;
+//need more work on ENUMS
+//convert array of arrays into csv representation 
+function toCsvText(array) {
+    return array.map(function (row) { return row.join(','); }).join('\n');
+}
+exports.toCsvText = toCsvText;
+//.sort practice: 
+function sortMe(names) {
+    return names.sort();
+}
+exports.sortMe = sortMe;
+function movie(card, ticket, perc) {
+    var totalA = 0;
+    var totalB = card;
+    var numTickets = 0;
+    var currentTicketPrice = ticket;
+    while (Math.ceil(totalB) >= totalA) {
+        numTickets++;
+        totalA += ticket;
+        currentTicketPrice *= perc;
+        totalB += currentTicketPrice;
+    }
+    return numTickets;
+}
+exports.movie = movie;
+//   export function evenNumbers(array: number[], n: number): number[] {
+//   return array.reverse().filter(num => num%2===0).slice(0,n).reverse()
+// }
+//^^^much simpler down below:
+function evenNumbers(array, n) {
+    return array.filter(function (x) { return x % 2 === 0; }).slice(-n);
+}
+exports.evenNumbers = evenNumbers;
+function stringToArray(s) {
+    return s.split(" ");
+}
+exports.stringToArray = stringToArray;
+function isIsogram(str) {
+    var charSet = new Set(str.toLowerCase());
+    return charSet.size === str.length;
+}
+exports.isIsogram = isIsogram;
+function countLettersAndDigits(input) {
+    var count = 0;
+    for (var _i = 0, input_1 = input; _i < input_1.length; _i++) {
+        var char = input_1[_i];
+        if (char.match(/[a-zA-Z0-9]/)) {
+            count++;
+        }
+    }
+    return count;
+}
+exports.countLettersAndDigits = countLettersAndDigits;
+function createPhoneNumber(n) {
+    return "(".concat(n[0]).concat(n[1]).concat(n[2], ") ").concat(n[3]).concat(n[4]).concat(n[5], "-").concat(n[6]).concat(n[7]).concat(n[8]).concat(n[9]);
+}
+exports.createPhoneNumber = createPhoneNumber;
+/// improvement below: 
+function createPhoneNumber2(numbers) {
+    var phoneNumber = '(xxx) xxx-xxxx';
+    for (var i = 0; i < numbers.length; i++) {
+        phoneNumber = phoneNumber.replace('x', numbers[i].toString());
+    }
+    return phoneNumber;
+}
+exports.createPhoneNumber2 = createPhoneNumber2;
+// (C)at and (m)ouse position calc:
+function catMouse(x) {
+    return x.indexOf('m') - x.indexOf('C') <= 4 ? 'Caught!' : 'Escaped!';
+}
+exports.catMouse = catMouse;
+//

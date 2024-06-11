@@ -379,3 +379,5 @@ export function createPhoneNumber2(numbers: number[]): string {
  export function catMouse(x: string): string {
   return x.indexOf('m') - x.indexOf('C') <= 4?  'Caught!' : 'Escaped!' 
  }
+
+ //
