@@ -380,4 +380,9 @@ export function createPhoneNumber2(numbers: number[]): string {
   return x.indexOf('m') - x.indexOf('C') <= 4?  'Caught!' : 'Escaped!' 
  }
 
- //
+ // replace b with a in a string and visa versa
+ export function switcheroo(x: string): string {
+  let xArr = x.split('').map(char =>  char === 'b'  ? char = 'a' : char === 'a'? char = 'b': char = char 
+  )
+   return xArr.join('')
+ }
