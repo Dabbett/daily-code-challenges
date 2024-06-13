@@ -406,3 +406,9 @@ export function evensAndOdds2(n: number): string {
 export function evensAndOdds3(n: number): string {
   return n.toString((n % 2 === 0 ? 2: 16))
 }
+
+//checking for automorphic
+export function automorphic(n: number): string {
+  let prod = n*n
+  return prod.toString().endsWith(n.toString()) ? "Automorphic" : 'Not!!'
+}
