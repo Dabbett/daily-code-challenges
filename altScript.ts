@@ -386,3 +386,23 @@ export function createPhoneNumber2(numbers: number[]): string {
   )
    return xArr.join('')
  }
+
+ //convert to binary or hexidecimal:
+ export function evensAndOdds(n: number): string {
+  if(n % 2 === 0){
+    return n.toString(2)
+  } else {
+    return n.toString(16)
+  }
+}
+
+//or, to simlify:
+export function evensAndOdds2(n: number): string {
+  let v = n % 2 === 0 ? 2: 16
+  return n.toString(v)
+}
+
+//or even better: 
+export function evensAndOdds3(n: number): string {
+  return n.toString((n % 2 === 0 ? 2: 16))
+}
