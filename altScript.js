@@ -4,7 +4,7 @@
 // arrayOfNames.push('Sam Costa')
 // arrayOfNames[2] = 'Amber Hudson'
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.catMouse = exports.createPhoneNumber2 = exports.createPhoneNumber = exports.countLettersAndDigits = exports.isIsogram = exports.stringToArray = exports.evenNumbers = exports.movie = exports.sortMe = exports.toCsvText = exports.var15NeverFunction = exports.var14Undefined = exports.var13Null = exports.var12VoidFunction = exports.var11ArrayOfAny = exports.var10Enum = exports.var9Tuple = exports.var8NumericArray = exports.var7Array = exports.var6String = exports.var5Octal = exports.var4Binary = exports.var3Hex = exports.var2Decimal = exports.var1Boolean = exports.Color = exports.findDifference = exports.usdcny = exports.parseF = exports.invert = exports.shark = exports.paperwork = void 0;
+exports.automorphic = exports.evensAndOdds3 = exports.evensAndOdds2 = exports.evensAndOdds = exports.switcheroo = exports.catMouse = exports.createPhoneNumber2 = exports.createPhoneNumber = exports.countLettersAndDigits = exports.isIsogram = exports.stringToArray = exports.evenNumbers = exports.movie = exports.sortMe = exports.toCsvText = exports.var15NeverFunction = exports.var14Undefined = exports.var13Null = exports.var12VoidFunction = exports.var11ArrayOfAny = exports.var10Enum = exports.var9Tuple = exports.var8NumericArray = exports.var7Array = exports.var6String = exports.var5Octal = exports.var4Binary = exports.var3Hex = exports.var2Decimal = exports.var1Boolean = exports.Color = exports.findDifference = exports.usdcny = exports.parseF = exports.invert = exports.shark = exports.paperwork = void 0;
 // console.log(arrayOfNames)
 // when running, compiles to JS: 
 // var arrayOfNames = [];
@@ -318,4 +318,36 @@ function catMouse(x) {
     return x.indexOf('m') - x.indexOf('C') <= 4 ? 'Caught!' : 'Escaped!';
 }
 exports.catMouse = catMouse;
-//
+// replace b with a in a string and visa versa
+function switcheroo(x) {
+    var xArr = x.split('').map(function (char) { return char === 'b' ? char = 'a' : char === 'a' ? char = 'b' : char = char; });
+    return xArr.join('');
+}
+exports.switcheroo = switcheroo;
+//convert to binary or hexidecimal:
+function evensAndOdds(n) {
+    if (n % 2 === 0) {
+        return n.toString(2);
+    }
+    else {
+        return n.toString(16);
+    }
+}
+exports.evensAndOdds = evensAndOdds;
+//or, to simlify:
+function evensAndOdds2(n) {
+    var v = n % 2 === 0 ? 2 : 16;
+    return n.toString(v);
+}
+exports.evensAndOdds2 = evensAndOdds2;
+//or even better: 
+function evensAndOdds3(n) {
+    return n.toString((n % 2 === 0 ? 2 : 16));
+}
+exports.evensAndOdds3 = evensAndOdds3;
+//checking for automorphic
+function automorphic(n) {
+    var prod = n * n;
+    return prod.toString().endsWith(n.toString()) ? "Automorphic" : 'Not!!';
+}
+exports.automorphic = automorphic;
