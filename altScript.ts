@@ -412,3 +412,5 @@ export function automorphic(n: number): string {
   let prod = n*n
   return prod.toString().endsWith(n.toString()) ? "Automorphic" : 'Not!!'
 }
+
+//regex
