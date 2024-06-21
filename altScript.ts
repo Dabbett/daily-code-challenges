@@ -413,4 +413,5 @@ export function automorphic(n: number): string {
   return prod.toString().endsWith(n.toString()) ? "Automorphic" : 'Not!!'
 }
 
-//regex
+
+
