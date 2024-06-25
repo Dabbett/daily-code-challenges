@@ -10,3 +10,7 @@ WHERE first_name REGEXP 'ru|bu'
 SELECT *
 from customers
 WHERE phone IS NULL
+-- get users that are adults
+SELECT * 
+FROM users
+WHERE age >= 18
