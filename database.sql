@@ -14,3 +14,7 @@ WHERE phone IS NULL
 SELECT * 
 FROM users
 WHERE age >= 18
+--- find customers that are not adults
+SELECT * 
+FROM users
+WHERE age < 18
