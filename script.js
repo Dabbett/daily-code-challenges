@@ -2833,3 +2833,10 @@ fetchData
 
     const countRedBeads = n => n<2 ? 0: (n-1)*2
 
+//add a website to an array 1000 times.
+var websites = []
+while (websites.length < 1000) {
+  websites.push("codewars")
+}
+
+console.log(websites)
