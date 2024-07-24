@@ -2840,3 +2840,23 @@ while (websites.length < 1000) {
 }
 
 console.log(websites)
+
+function calculateYears(P, I, T, D) {
+    let years = 0;
+    while (P < D) {
+        P += P * I * (1 - T);
+        years++;
+    }
+    return years;
+}
+//or 
+
+function calculateYears(P, I, T, D) {
+    let Y
+     for(Y = 0; P < D; Y++) {
+       let interest = I * P
+       let tax = T * interest
+       P += interest - tax
+       }
+         return Y
+   }
