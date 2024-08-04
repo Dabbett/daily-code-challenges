@@ -2864,3 +2864,5 @@ function calculateYears(P, I, T, D) {
 //adding two numbers inputted as strings and returning them as a string
 
 const sumStr = (a,b) => String(Number(a) + Number(b))
+
+test issues
