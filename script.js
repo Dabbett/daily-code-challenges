@@ -2865,3 +2865,14 @@ function calculateYears(P, I, T, D) {
 
 const sumStr = (a,b) => String(Number(a) + Number(b))
 
+
+const alphabet = [
+    'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 
+    'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
+  ];
+  
+const numbers = [
+    1 , 2 , 3 , 4 , 5 , 6 , 7 
+]
+
+console.log([...alphabet,...numbers.map(String)])
