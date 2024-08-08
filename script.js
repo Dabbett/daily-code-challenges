@@ -2748,131 +2748,149 @@
 //   }
 // }
 
-import React, { Component } from 'react';
+// import React, { Component } from 'react';
 
-class Live extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            isLive: null
-        };
-    }
+// class Live extends Component {
+//     constructor(props) {
+//         super(props);
+//         this.state = {
+//             isLive: null
+//         };
+//     }
 
-    componentDidMount() {
+//     componentDidMount() {
         
-        const { user } = this.props;
+//         const { user } = this.props;
 
         
-        const { state } = this.state;
+//         const { state } = this.state;
 
-        // Check if the user is live based on the state
-        if (state === true) {
-            this.setState({ isLive: `${user} is live` });
-        } else {
-            this.setState({ isLive: `${user} isn't live` });
-        }
-    }
+//         // Check if the user is live based on the state
+//         if (state === true) {
+//             this.setState({ isLive: `${user} is live` });
+//         } else {
+//             this.setState({ isLive: `${user} isn't live` });
+//         }
+//     }
 
-    render() {
-        return (
-            <div>
-                <p>{this.state.isLive}</p>
-            </div>
-        );
-    }
-}
+//     render() {
+//         return (
+//             <div>
+//                 <p>{this.state.isLive}</p>
+//             </div>
+//         );
+//     }
+// }
 
-export default Live;
+// export default Live;
 //** converted to typescript in separate file altscript.ts **
 
 //combine two arrays, ensure they are numbers and order them largest to smallest. if there is a duplicated, omit it. 
 
-let arrOfNums = [1,2,5,9,4]
-let arrOfNums2 = [1,3,2,6,7]
+// let arrOfNums = [1,2,5,9,4]
+// let arrOfNums2 = [1,3,2,6,7]
 
-let combinedArr = arrOfNums.concat(arrOfNums2).sort((a,b) => b - a).filter
-let uniqueNums =combinedArr.filter(num => arrOfNums)
+// let combinedArr = arrOfNums.concat(arrOfNums2).sort((a,b) => b - a)
+// let uniqueNums = combinedArr.filter(num => arrOfNums)
 
-//promises basics review 
-let p = new Promise((resolve, reject) => {
-    let a = 1 + 1
-    if (a===2) {
-        resolve('success')
-    } else {
-        reject('failed')
-    }
-})
+// //promises basics review 
+// let p = new Promise((resolve, reject) => {
+//     let a = 1 + 1
+//     if (a===2) {
+//         resolve('success')
+//     } else {
+//         reject('failed')
+//     }
+// })
 
-p.then((message) => {
-    console.log('this is in the then ' + message)
-}).catch((message) => {
-    console.log('this is in the catch ' + message)
-})
+// p.then((message) => {
+//     console.log('this is in the then ' + message)
+// }).catch((message) => {
+//     console.log('this is in the catch ' + message)
+// })
 
-// Create a new promise
-const fetchData = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        const success = true; // Simulating success or failure
-        if (success) {
-            resolve("Data fetched successfully");
-        } else {
-            reject("Error fetching data");
-        }
-    }, 2000); // Simulate a delay of 2 seconds
-});
+// // Create a new promise
+// const fetchData = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         const success = true; // Simulating success or failure
+//         if (success) {
+//             resolve("Data fetched successfully");
+//         } else {
+//             reject("Error fetching data");
+//         }
+//     }, 2000); // Simulate a delay of 2 seconds
+// });
 
-// Handle the resolved or rejected state
-fetchData
-    .then((result) => {
-        console.log(result); // Output: "Data fetched successfully" if successful
-    })
-    .catch((error) => {
-        console.error(error); // Output: "Error fetching data" if there's an error
-    });
-
-
-    const countRedBeads = n => n<2 ? 0: (n-1)*2
-
-//add a website to an array 1000 times.
-var websites = []
-while (websites.length < 1000) {
-  websites.push("codewars")
-}
-
-console.log(websites)
-
-function calculateYears(P, I, T, D) {
-    let years = 0;
-    while (P < D) {
-        P += P * I * (1 - T);
-        years++;
-    }
-    return years;
-}
-//or 
-
-function calculateYears(P, I, T, D) {
-    let Y
-     for(Y = 0; P < D; Y++) {
-       let interest = I * P
-       let tax = T * interest
-       P += interest - tax
-       }
-         return Y
-   }
-
-//adding two numbers inputted as strings and returning them as a string
-
-const sumStr = (a,b) => String(Number(a) + Number(b))
+// // Handle the resolved or rejected state
+// fetchData
+//     .then((result) => {
+//         console.log(result); // Output: "Data fetched successfully" if successful
+//     })
+//     .catch((error) => {
+//         console.error(error); // Output: "Error fetching data" if there's an error
+//     });
 
 
-const alphabet = [
-    'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 
-    'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
-  ];
+//     const countRedBeads = n => n<2 ? 0: (n-1)*2
+
+// // //add a website to an array 1000 times.
+// // var websites = []
+// // while (websites.length < 1000) {
+// //   websites.push("codewars")
+// // }
+
+// console.log(websites)
+
+// function calculateYears(P, I, T, D) {
+//     let years = 0;
+//     while (P < D) {
+//         P += P * I * (1 - T);
+//         years++;
+//     }
+//     return years;
+// }
+// //or 
+
+// function calculateYears(P, I, T, D) {
+//     let Y
+//      for(Y = 0; P < D; Y++) {
+//        let interest = I * P
+//        let tax = T * interest
+//        P += interest - tax
+//        }
+//          return Y
+//    }
+
+// //adding two numbers inputted as strings and returning them as a string
+
+// const sumStr = (a,b) => String(Number(a) + Number(b))
+
+
+// const alphabet = [
+//     'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 
+//     'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
+//   ];
   
-const numbers = [
-    1 , 2 , 3 , 4 , 5 , 6 , 7 
-]
+// const numbers = [
+//     1 , 2 , 3 , 4 , 5 , 6 , 7 
+// ]
 
-console.log([...alphabet,...numbers.map(String)])
+// console.log([...alphabet,...numbers.map(String)])
+
+const person1 = {
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 30,
+    job: 'Engineer',
+    hobbies: ['Reading', 'Hiking', 'Gaming']
+};
+
+const person2 = {
+    firstName: 'Jane',
+    lastName: 'Smith',
+    job: 'Designer'
+};
+
+console.log([person1, person2])
+const combinedPerson = {...person1, ...person2}
+console.log(combinedPerson)
