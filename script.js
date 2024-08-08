@@ -2888,9 +2888,22 @@ const person1 = {
 const person2 = {
     firstName: 'Jane',
     lastName: 'Smith',
-    job: 'Designer'
+    job: 'Designer',
+    favoriteFood: 'pizza'
 };
 
-console.log([person1, person2])
+// console.log([person1, person2])
 const combinedPerson = {...person1, ...person2}
-console.log(combinedPerson)
+// console.log(combinedPerson)
+
+// function introducePerson({user}) {
+//     console.log(`The user's name is ${user.firstName}, and their age is ${user.age}.`)
+// }
+
+function introducePerson({firstName, age, favoriteFood = 'watermelon'}) {
+    console.log(`The user's name is ${firstName}. Their age is ${age} and they like ${favoriteFood}.`)
+}
+
+introducePerson(person1)
+
+introducePerson(combinedPerson)
